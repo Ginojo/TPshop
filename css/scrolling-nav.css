@@ -1,0 +1,283 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+
+
+ .bg-dark {
+  background-color:
+  rgba(255, 255, 255, 0) !important;
+}
+
+nav .navbar-brand {
+  vertical-align: middle;
+  border-style: none;
+  width: 10%;
+}
+
+.nav-link {
+    display: block;
+    padding: 0px;
+}
+
+.shrink .navbar-brand {
+        height: 0 !important;
+        line-height: 0 !important;
+    }
+
+.primary-nav {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+ }
+
+ .bg-dark.shrink {
+   background-color:
+   rgba(238, 52, 52, 0.91) !important;
+ }
+
+  .shrink {
+         padding-top: 0 !important;
+         padding-bottom: 0 !important;
+         min-height: 55px !important;
+     }
+
+    .shrink a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+    }
+
+/* HEADER */
+
+header {
+  padding: 0 0 0;
+}
+
+#text .hom1 {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  color: white;
+  margin-top:  300px;
+        padding-right: 200px;
+}
+
+#text .hom1 h1 {
+  font-size: 100px;
+}
+    #text .hom1 p {
+      font-size: 30px;
+    }
+
+#text .hom2 {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  color:
+    white;
+  margin-top: 350px;
+
+  padding: 20px;
+  background-color:
+  rgba(147, 147, 147, 0.5) !important;
+}
+
+#text .hom2 h1 {
+  font-size: 40px;
+}
+#text .hom2 p {
+  font-size: 30px;
+}
+
+#text a {
+  font-size: 25px;
+  text-shadow: none;
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  #text .hom1 {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    color: white;
+    margin-top:  300px;
+          padding-right: 200px;
+  }
+
+  #text .hom1 h1 {
+    font-size: 100px;
+  }
+      #text .hom1 p {
+        font-size: 30px;
+      }
+
+  #text .hom2 {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    color:
+      white;
+    margin-top: 350px;
+
+    padding: 20px;
+    background-color:
+    rgba(147, 147, 147, 0.5) !important;
+  }
+
+  #text .hom2 h1 {
+    font-size: 40px;
+  }
+  #text .hom2 p {
+    font-size: 30px;
+  }
+
+  #text a {
+    font-size: 25px;
+    text-shadow: none;
+  }
+
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #text .hom1 {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      color: white;
+      margin-top:  300px;
+            padding-right: 200px;
+    }
+
+    #text .hom1 h1 {
+      font-size: 100px;
+    }
+        #text .hom1 p {
+          font-size: 30px;
+        }
+
+    #text .hom2 {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      color:
+        white;
+      margin-top: 350px;
+
+      padding: 20px;
+      background-color:
+      rgba(147, 147, 147, 0.5) !important;
+    }
+
+    #text .hom2 h1 {
+      font-size: 40px;
+    }
+    #text .hom2 p {
+      font-size: 30px;
+    }
+
+    #text a {
+      font-size: 25px;
+      text-shadow: none;
+    }
+
+    }
+
+@media only screen and (min-width: 250px) and (max-width: 768px){
+
+  .bg-dark {
+    background-color:
+    rgba(255, 255, 255, 0) !important;
+ }
+
+ nav .navbar-brand {
+   vertical-align: middle;
+   border-style: none;
+   width: 15%;
+ }
+
+ #text .hom1 {
+   position: absolute;
+   z-index: 10;
+   width: auto;
+   color: white;
+   margin-top:  170px;
+   padding-right: 80px;
+ }
+
+ #text .hom1 h1 {
+   font-size: 40px;
+ }
+     #text .hom1 p {
+       font-size: 20px;
+     }
+
+ #text .hom2 {
+   position: absolute;
+   z-index: 10;
+   width: auto;
+   color:
+     white;
+   margin-top: 450px;
+   padding: 20px;
+margin-right: 20px;
+   background-color:
+   rgba(147, 147, 147, 0.5) !important;
+ }
+
+ #text .hom2 h1 {
+   font-size: 40px;
+ }
+ #text .hom2 p {
+   font-size: 20px;
+ }
+
+ #text a {
+   font-size: 20px;
+   text-shadow: none;
+ }
+
+}
+
+
+
+
+
+
+
+
+.carousel-item {
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+
+
+section {
+  padding: 150px 0;
+}
