@@ -142,6 +142,30 @@ border-color:
 }
 
 
+.carousel-item {
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+
+
 /* Services */ /*  ****************************************************************************************************************************************************** */
 /*  ****************************************************************************************************************************************************** */
 
@@ -160,9 +184,6 @@ border-color:
     border: 5px solid rgba(170, 150, 150, 1);
     margin-bottom: 20px;
 }
-
-
-
 
 .media
 {
@@ -343,28 +364,6 @@ margin-right: 20px;
 
 }
 
-.carousel-item {
-  height: 100vh;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.showcase .showcase-text {
-  padding: 3rem;
-}
-
-.showcase .showcase-img {
-  min-height: 30rem;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px){
@@ -381,7 +380,7 @@ margin-right: 20px;
   }
 
   #text .hom1 h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
       #text .hom1 p {
         font-size: 17px;
@@ -393,7 +392,7 @@ margin-right: 20px;
     width: auto;
     color:
       white;
-    margin-top: 350px;
+    margin-top: 360px;
     padding: 25px 25px 0 25px ;
   margin-right: 20px;
       margin-left: 75px;
