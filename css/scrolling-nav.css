@@ -69,7 +69,7 @@ nav .navbar-brand {
 /*  ****************************************************************************************************************************************************** */
 
 header {
-  padding: 0 0 50px 0;
+  padding: 0 0 0;
 }
 
 #text .hom1 {
@@ -362,6 +362,12 @@ font-size: 44px;
 
   .card {
   margin-left: 28px;
+  margin-top: 20px;
+  }
+
+  .ser p {
+      margin-top: 0;
+      margin-bottom: 7rem;
   }
 
 }
@@ -423,8 +429,13 @@ font-size: 44px;
 
   .card {
   margin-left: 28px;
+  margin-top: 20px;
   }
 
+  .ser p {
+      margin-top: 0;
+      margin-bottom: 7rem;
+  }
 
 
  }
