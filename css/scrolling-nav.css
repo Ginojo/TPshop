@@ -82,6 +82,33 @@ header {
 
 }
 
+.red .btn-primary {
+    color:
+#fff;
+background-color:
+#eb252eff;
+border-color:
+    #eb252eff;
+}
+
+.yel .btn-primary {
+    color:
+#000;
+background-color:
+#fffc00;
+border-color:
+    #fffc00;
+}
+
+.blue .btn-primary {
+    color:
+#fff;
+background-color:
+#007bff;
+border-color:
+#007bff;
+}
+
 #text .hom1 h1 {
   font-size: 100px;
 }
@@ -347,8 +374,8 @@ margin-right: 20px;
     z-index: 10;
     width: auto;
     color: white;
-    margin-top:  170px;
-    padding: 0 40px 0 40px;
+    margin-top:  150px;
+    padding: 0 40px 0 35px;
         text-align: center;
 
   }
@@ -366,10 +393,10 @@ margin-right: 20px;
     width: auto;
     color:
       white;
-    margin-top: 380px;
+    margin-top: 350px;
     padding: 25px 25px 0 25px ;
   margin-right: 20px;
-      margin-left: 80px;
+      margin-left: 75px;
     background-color:
     rgba(147, 147, 147, 0.5) !important;
         text-align: center;
@@ -383,7 +410,7 @@ margin-right: 20px;
   }
 
   #text a {
-    font-size: 20px;
+    font-size: 17px;
     text-shadow: none;
   }
 
