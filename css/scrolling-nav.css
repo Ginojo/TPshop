@@ -15,7 +15,7 @@
  }
 
  section {
-   padding: 100px 0;
+   padding: 100px 0 50px 0;
  }
 
 /* NAV */ /*  ****************************************************************************************************************************************************** */
@@ -69,7 +69,7 @@ nav .navbar-brand {
 /*  ****************************************************************************************************************************************************** */
 
 header {
-  padding: 0 0 0;
+  padding: 0 0 50px 0;
 }
 
 #text .hom1 {
@@ -79,6 +79,7 @@ header {
   color: white;
   margin-top:  300px;
         padding-right: 200px;
+
 }
 
 #text .hom1 h1 {
@@ -347,7 +348,9 @@ margin-right: 20px;
     width: auto;
     color: white;
     margin-top:  170px;
-    padding-right: 80px;
+    padding: 0 40px 0 40px;
+        text-align: center;
+
   }
 
   #text .hom1 h1 {
@@ -363,15 +366,17 @@ margin-right: 20px;
     width: auto;
     color:
       white;
-    margin-top: 370px;
-    padding: 15px;
+    margin-top: 380px;
+    padding: 25px 25px 0 25px ;
   margin-right: 20px;
+      margin-left: 80px;
     background-color:
     rgba(147, 147, 147, 0.5) !important;
+        text-align: center;
   }
 
   #text .hom2 h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   #text .hom2 p {
     font-size: 20px;
