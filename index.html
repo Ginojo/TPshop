@@ -545,7 +545,7 @@
             <img src="images/g869.png" alt="The printing shop">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                 <span class="fa fa-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
@@ -1206,25 +1206,16 @@
         </div>
 
         <div class="col-lg-3 ml-lg-auto col-sm-12">
+
           <div class="footer-widget">
-            <h3>Account</h3>
+            <h3>Social Media</h3>
             <!-- Links -->
-            <ul class="footer-links ">
+            <ul class="list-unstyled footer-links">
+              <li><a href="https://www.facebook.com/KoppieKopie.be"><i class="fab fa-facebook-f"></i>Facebook</a></li>
 
-              <li>
-                <a href="privacy.html">
-                  Privacy beleid
-                </a>
-              </li>
-
-
-              <li>
-                <!--  <a href="faq.html">
-                  Veel gestelde vragen
-                </a> -->
-              </li>
             </ul>
           </div>
+
         </div>
 
 
@@ -1267,11 +1258,22 @@
 
         <div class="col-lg-2 col-sm-6">
           <div class="footer-widget">
-            <h3>Social Media</h3>
+            <h3>Account</h3>
             <!-- Links -->
-            <ul class="list-unstyled footer-links">
-              <li><a href="https://www.facebook.com/KoppieKopie.be"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+            <ul class="footer-links ">
 
+              <li>
+                <a href="privacy.html">
+                  Privacy beleid
+                </a>
+              </li>
+
+
+              <li>
+                <!--  <a href="faq.html">
+                  Veel gestelde vragen
+                </a> -->
+              </li>
             </ul>
           </div>
         </div>
@@ -1320,6 +1322,13 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+
+  <!-- Custom hamburger close on click -->
+  <script>
+  $(document).on('click',function(){
+  $('.collapse').collapse('hide');
+  })
+  </script>
 
 </body>
 
