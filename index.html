@@ -16,10 +16,9 @@
 
   <meta name="author" content="ginjo.io">
 
-  <title>The printing shop - snelste printingshop van Antwerpen</title>
+  <title>The printing shop - Snel en kwalitatief</title>
 
   <!-- FAVICON -->
-
   <link rel="apple-touch-icon" sizes="57x57" href="fav.ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="fav.ico/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="fav.ico/apple-icon-72x72.png">
@@ -73,9 +72,9 @@
   Custom CSS
   -----------------------------------*/
 
-  .flag img {
-    height: 30px;
-  }
+    .flag img {
+      height: 30px;
+    }
 
     .card-body h2 {
       color: #fff;
@@ -142,45 +141,46 @@
     4K LAYOUT: 2560px
   -----------------------------------*/
 
-  @media (min-width: 768px) and (max-width: 2560px) {
-  .time {
-    visibility: hidden;
-  }
-    }
 
-    #card {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      margin: -200 0 0 0;
-      padding: 0px 50px 0 50px;
-      background-color: #d15f64ff;
-      text-align: center;
-    }
-
-    .card-body {
-      width: 100%;
-      height: auto;
-    }
-
-
-    .bg-dark,
-    .btn-primary:hover {
-      background: #eb252eff !important;
-      border-color: #eb252eff !important;
-      color: #fff;
-      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.24), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
-    }
-
-
-    @media (min-width: 1652px) and (max-width: 2000px) {
-
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
+    @media (min-width: 992px) and (max-width: 2560px) {
+      .time {
+        visibility: hidden;
+        margin-top: 2px;
       }
+
+
     }
+
+
+    @media (min-width: 768px) and (max-width: 2560px) {
+
+      .time {
+        visibility: hidden;
+        margin-top: 2px;
+      }
+
+
+
+      .card-body {
+        width: 100%;
+        height: auto;
+      }
+
+
+      .bg-dark,
+      .btn-primary:hover {
+        background: #eb252eff !important;
+        border-color: #eb252eff !important;
+        color: #fff;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.24), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
+      }
+
+    }
+
+
+
+
+    @media (min-width: 1652px) and (max-width: 2000px) {}
 
     /*---------------------------------- -----------------------------------------------------------------------
         Default LAYOUT: 1440px
@@ -188,13 +188,6 @@
 
     @media (min-width: 1440px) and (max-width: 2560px) {
 
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
 
       .contact-info-block1 {
 
@@ -213,6 +206,7 @@
         display: block;
         color: #eb252eff;
       }
+
       .pay img {
         margin-bottom: -200px;
       }
@@ -224,13 +218,6 @@
     -----------------------------------*/
 
     @media (max-width: 1440px) {
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
 
       .contact-info-block1 {
 
@@ -259,13 +246,7 @@
         MEDIUM LAYOUT: 1280px
     -----------------------------------*/
     @media (max-width: 1024px) {
-      #card {
-        box-shadow: 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
+
 
       .contact-info-block1 {
 
@@ -319,17 +300,38 @@
 
 
     @media (max-width: 992px) {
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 1px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
+
+      .time {
+        padding-top: 1px;
+
+      }
+
+      #banner #intro {
+        margin-top: 100px;
+
+      }
+
+      #banner h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 2px;
+        padding-bottom: 45px;
+
+      }
+
+
+
+      .banner-content {
+        padding: 20px;
+        padding-right: 30px;
+        margin-top: 1px;
+
       }
 
       .contact-info-block1 {
-
-
         padding: 55.5px 20px;
         border-radius: 5px;
       }
@@ -349,32 +351,6 @@
 
     /* Phones ----------------------------------------------------------------------- */
 
-
-  @media (min-width: 425px) and (max-width: 768px) {
-
-.time {
-        margin: 250px 0 0 0;
-
-
-    }
-
-    .contact-info-block2 {
-      border: 1px solid #eee;
-      padding: 40px 20px;
-      border-radius: 5px;
-      margin-bottom: 25px;
-    }
-
-    #card {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      margin: 50px 0 0 0;
-      padding: 20px;
-      background-color: #d15f64ff;
-      text-align: center;
-    }
-
-
-}
     @media (max-width: 768px) {
 
       .pay img {
@@ -384,14 +360,6 @@
       .navbar-dark .navbar-toggler {
         color: rgb(255, 255, 255);
         border-color: rgb(255, 255, 255);
-      }
-
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -300px 0 0 0;
-        padding: 20px;
-        background-color: #d15f64ff;
-        text-align: center;
       }
 
       #contacttop {
@@ -405,9 +373,63 @@
         height: 120px;
       }
 
+
+
+
+      .time {
+        margin: 200px 0 0 0;
+      }
+
+
+      #banner i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        display: block;
+        color: #eb252eff;
+      }
+
+      #banner h5 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 2px;
+      }
+
+      .contact-info-block2 {
+        border: 1px solid #eee;
+        padding: 20px 20px;
+        border-radius: 5px;
+        margin: 1px 100px 0 100px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      #banner #intro {
+        margin-top: 1px;
+
+      }
+
+      #banner h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 2px;
+        padding-bottom: 45px;
+
+      }
+
+
+
+
+
       .banner-content {
-        padding: 80px 0 0 0;
+        padding: 20px;
         padding-right: 30px;
+        margin-top: 1px;
+
       }
 
       .display-4 {
@@ -416,8 +438,6 @@
 
 
       .contact-info-block1 {
-
-
         padding: 55.5px 20px;
         border-radius: 5px;
       }
@@ -445,52 +465,48 @@
 
     @media (max-width: 640px) {
 
-      .menu-2 img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
+      .time {
+        margin: 250px 0 0 0;
       }
+    }
 
-      .navbar-dark .navbar-toggler {
-        color: rgb(255, 255, 255);
-        border-color: rgb(255, 255, 255);
-      }
+    .menu-2 img {
+      vertical-align: middle;
+      border-style: none;
+      height: 120px;
+    }
 
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 20px 0 0 0;
-        padding: 20px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
+    .navbar-dark .navbar-toggler {
+      color: rgb(255, 255, 255);
+      border-color: rgb(255, 255, 255);
+    }
 
-      .banner-content {
-        padding-right: 0px;
-      }
+    .banner-content {
+      padding-top: 50px 0px;
 
-      .banner-content .display-4 {
-        font-size: 50px;
-      }
+    }
 
-      .contact-info-block2 {
-        border: 1px solid #eee;
-        padding: 40px 20px;
-        border-radius: 5px;
-        margin-bottom: 25px;
-      }
+    .banner-content .display-4 {
+      font-size: 50px;
+    }
 
-      .contact-info-block1 {
-        padding: 55.5px 20px;
-        border-radius: 5px;
-          margin-bottom: 25px;
-      }
+    #service p {
+      padding-right: 60px;
+    }
 
-      #footer img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-        margin-bottom: 30px;
-      }
+
+    .contact-info-block1 {
+      padding: 55.5px 20px;
+      border-radius: 5px;
+      margin-bottom: 25px;
+    }
+
+    #footer img {
+      vertical-align: middle;
+      border-style: none;
+      height: 120px;
+      margin-bottom: 30px;
+    }
 
     }
 
@@ -501,14 +517,14 @@
         margin: 250px 0 0 0;
       }
 
-            .pay img {
-              margin-bottom: 20px;
-            }
+      .pay img {
+        margin-bottom: 20px;
+      }
 
-            .pay2 img {
-              margin: -100px 0 -100px 0;
-              height: 50%;
-            }
+      .pay2 img {
+        margin: -100px 0 -100px 0;
+        height: 50%;
+      }
 
       .menu-2 img {
         vertical-align: middle;
@@ -521,12 +537,11 @@
         border-color: rgb(255, 255, 255);
       }
 
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 1px 0 0 0;
-        padding: 20px;
-        background-color: #d15f64ff;
-        text-align: center;
+      .contact-info-block2 {
+        border: 1px solid #eee;
+        padding: 40px 20px;
+        border-radius: 5px;
+        margin: 250px 5px 0 5px;
       }
 
 
@@ -538,12 +553,6 @@
         font-size: 50px;
       }
 
-      .contact-info-block1 {
-        padding: 55px 20px;
-        border-radius: 5px;
-        margin-bottom: 25px;
-      }
-
       #footer img {
         vertical-align: middle;
         border-style: none;
@@ -551,9 +560,53 @@
         margin-bottom: 30px;
       }
 
-
     }
 
+    /* Phones ----------------------------------------------------------------------- */
+
+    /* Phones ----------------------------------------------------------------------- */
+
+    @media (max-width: 330px) {
+
+      .contact-info-block2 {
+        border: 1px solid #eee;
+        padding: 40px 20px;
+        border-radius: 5px;
+        margin: 250px 5px 0 5px;
+      }
+    }
+
+    @media (max-width: 240px) {
+
+      .time {
+        margin: -50px 0 0 0;
+      }
+
+      .contact-info-block2 {
+        border: 1px solid #eee;
+        padding: 40px 20px;
+        border-radius: 5px;
+        margin: 250px 5px 40px 5px;
+      }
+
+
+      #banner h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 2px;
+        padding-bottom: 45px;
+        text-align: center;
+
+      }
+
+      .banner-content .display-4 {
+        font-size: 30px;
+      }
+
+    }
   </style>
 
 </head>
@@ -586,10 +639,10 @@
             <p style="text-align: center;" class="pt-3 pr-2">We gebruiken cookies om de functie van deze website verder te verbeteren.</p>
 
 
-                        <!--  <a style="color:#fff;" type="button" href="privacy.html" class="btn btn-primary">Privacy Beleid
+            <!--  <a style="color:#fff;" type="button" href="privacy.html" class="btn btn-primary">Privacy Beleid
                           <i class="fas fa-book ml-1"></i> -->
-                        </a>
-                        <a style="color:#fff;" type="button" class="btn btn-primary" data-dismiss="modal">Ok, bedankt</a>
+            </a>
+            <a style="color:#fff;" type="button" class="btn btn-primary" data-dismiss="modal">Ok, bedankt</a>
           </div>
         </div>
       </div>
@@ -603,7 +656,7 @@
     <div class="container">
 
       <div style="float: right;" class="flag">
-      <p><a href="index.html"> <img style="height: 30px;" src="images/nl.png" alt="dutch"> </a> / <a href="index2.html"> <img  style="height: 30px;" src="images/uk.png" alt="english"> </a></p>
+        <p><a href="index.html"> <img style="height: 30px;" src="images/nl.png" alt="dutch"> </a> / <a href="index2.html"> <img style="height: 30px;" src="images/uk.png" alt="english"> </a></p>
       </div>
 
 
@@ -630,7 +683,7 @@
 
           <div class="top-info-block d-inline-flex">
             <div class="icon-block">
-              <i class="ti-E-mail"></i>
+              <i class="ti-email"></i>
             </div>
             <div class="info-block">
               <h5 class="font-weight-500">info@tpshop.be</h5>
@@ -669,7 +722,7 @@
             <span class="fa fa-bars"></span>
           </button>
 
-        <!--  <select onchange="location = this.value;" class="selectpicker" data-width="fit">
+          <!--  <select onchange="location = this.value;" class="selectpicker" data-width="fit">
 
     <option value="index.html">Change language</option>
 
@@ -704,47 +757,65 @@
           _________________________________________________________________________________________________________________________________
           _________________________________________________________________________________________________________________________________ -->
 
-<div class="time container">
-
-  <div class="row">
-    <div class="col-lg-3 col-sm-6 col-md-6">
-      <div style="  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" class="contact-info-block2 text-center">
-          <i style="font-size: 40px;  margin-bottom: 20px;  display: block;  color: #eb252eff;" class="ti-time"></i>
-    <h4>Openingstijden</h4>
-          <p class="font-weight-500">Ma-Vr 10:00-18:00 <br> Za-Zo 11:00-17:00 </p>
-          <h5>7/7 geopend</h5>
-        </div>
-      </div>
-  </div>
-
-</div>
 
   <section class="banner-area py-5" id="banner">
-
-
-
-
-    </div>
 
     <!-- Content -->
     <div class="container">
 
+      <div class="time">
 
-      <div class="row">
-        <div class="col-lg-12 col-sm-12 col-md-12">
-          <div id="card" style="  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" class="contact-info-block text-center">
-            <i class=""></i>
-            <h4 style="color:#fff; font-size: 30px;">Maatregelen betreffende COVID-19</h4> <br>
-            <p style="color:#fff; font-size: 20px;" class="lead">
-              Vanaf maandag 11 mei 2020 zal onze winkel terug open zijn voor het ophalen van uw bestelling.
-              U kan uw bestanden bezorgen via mail of via de <a id="link" style="text-decoration: underline;" href="#contact" class="js-scroll-trigger">bestelknop</a> op deze site. <br><br>Dus drukwerk zoals visitekaarten of het printen van
-              eindwerken is mogelijk.
-              <br><br> Tijdelijk zullen we echter geen kopie- of scan services aanbieden om fysiek contact te beperken.
-              Voor bedrijven en verenigingen kunnen deze diensten op afspraak mogelijk zijn.</p>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="contact-info-block2 text-center">
+              <i style="font-size: 40px;  margin-bottom: 10px;  display: block;  color: #eb252eff;" class="ti-time"></i>
+              <h5>Openingstijden</h5>
+              <p class="font-weight-500">Ma-Vr 10:00-18:00 <br> Za-Zo 11:00-17:00 </p>
+              <h5></h5>
+            </div>
           </div>
         </div>
+
       </div>
 
+      <br> <br>
+
+      <div class="row" id="intro">
+        <div style="margin-bottom: 100px;" class="col-12 text-center">
+
+          <h1>GESPECIALISEERD IN SNEL EN KWALITATIEF DRUKWERK</h1>
+
+        </div>
+
+        <br> <br>
+
+        <div class="col-md-5 col-sm-12">
+          <div class="contact-info-block4">
+            <h4 style="color:#fff;"><b>
+              <img style="width:3%;" src="images/dot.png" alt=""> Drukwerk op maat. <br>
+                    <img style="width:3%;" src="images/dot.png" alt=""> 70 tot 400 gram dikte. <br>
+              <img style="width:3%;" src="images/dot.png" alt=""> Gekleurd of zwart/wit. <br>
+              <img style="width:3%;" src="images/dot.png" alt=""> Enkel of dubbelzijdig.
+
+              </b></h4>
+          </div>
+
+        </div>
+
+        <div class="col-md-1 col-sm-12">
+
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div>
+            <h4> <a style="" href="#">Kies</a> uit ons rijk aanbod aan papiersoorten. <br><br>  Meestal de zelfde dag klaar. Vraag naar onze voorwaarden.
+            </h4>
+          </div>
+
+        </div>
+      </div>
+<br>
+      <hr>
 
       <div class="row  align-items-center justify-content-center">
         <div class="col-md-12 col-lg-8">
@@ -755,8 +826,7 @@
             </h1>
 
             <!-- Subheading -->
-            <p class="lead mb-5">
-              Snel en toegangelijk, we helpen u graag verder.
+            <p class="lead mb-5"> Snel en toegangelijk, we helpen u graag verder.
             </p>
 
             <!-- Button -->
@@ -821,17 +891,16 @@
               <h4>Drukwerk</h4>
 
               <div class="row">
-                <div class="fix1 col-lg-6 col-md-12 col-sm-12">
+                <div class="col-12">
                   <p> - Flyers <br>
                     - Folders <br>
                     - Visitekaartjes <br>
                     - Brochures <br>
-                    - Magazines</p>
-                </div>
-                <div class="fix1 col-lg-6 col-md-12 col-sm-12">
-                  <p> - Posters <br>
+                    - Magazines <br>
+                    - Posters <br>
                     - Enveloppen</p>
                 </div>
+
               </div>
 
             </div>
@@ -941,6 +1010,43 @@
     </div> -->
   </section>
 
+
+  <!--student _________________________________________________________________________________________________________________________________
+              _________________________________________________________________________________________________________________________________ -->
+
+
+
+  <section class="" id="student">
+    <div class="container">
+      <div class="block">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="contact-info-block3 text-center">
+              <h4 style="color: #fff;
+            font-size: 40px;">STUDENTEN <br> ACTIE </h4>
+            </div>
+          </div>
+        </div>
+        <br> <br> <br>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="contact-info-block6">
+              <h4 style="color: #fff;
+            font-size: 22px;"> VOOR ELKE STUDENT, DIRECT DE LAAGSTE PRIJS </h4>
+            <br>
+            <p style="font-size: 20px;"><a href="">Mail je bestanden</a> door in <b>PDF</b> met een duidelijke omschrijving. Wij laten je weten wanneer je deze kan komen ophalen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
 
   <!--samples _________________________________________________________________________________________________________________________________
               _________________________________________________________________________________________________________________________________ -->
@@ -1169,15 +1275,15 @@
             <p class="lead">+32 (0) 483 069 172</p>
           </div>
         </div>
-        </div>
       </div>
+    </div>
     </div>
   </section>
 
   <section class="section" id="contact">
     <div class="container">
       <div class="row mb-4">
-        <div class="col-md-6 col-lg-6">
+        <div class="order-sm-first order-sm-12 col-md-6 col-lg-6 ">
           <h5></h5>
           <!-- Heading -->
           <h2 class="section-title mb-2 ">
@@ -1191,7 +1297,7 @@
 
         </div>
 
-        <div class="col-md-6 col-lg-6">
+        <div class="order-sm-first order-sm-1 col-md-6 col-lg-6">
 
           <h2 style="padding-top: 10px;" class="section-title mb-2 ">
             Bestellen? <span class="font-weight-normal"></span>
@@ -1331,11 +1437,10 @@
 
   <div class="container">
 
-    <img style="float:right;"
-                            src="https://www.merchantequip.com/image/?logos=v|m|p|me&height=64" alt="Merchant Equipment Store Credit Card Logos"/>
-      </div>
+    <img style="float:right;" src="https://www.merchantequip.com/image/?logos=v|m|p|me&height=64" alt="Merchant Equipment Store Credit Card Logos" />
+  </div>
 
-<br> <br> <br>
+  <br> <br> <br>
 
   <!--Footer _________________________________________________________________________________________________________________________________
           _________________________________________________________________________________________________________________________________ -->
@@ -1358,7 +1463,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 ml-lg-auto col-sm-12">
+        <div class="col-lg-2 col-sm-4">
 
           <div class="footer-widget">
             <h3>Social Media</h3>
@@ -1372,7 +1477,7 @@
         </div>
 
 
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-2 col-sm-4">
           <div class="footer-widget">
             <h3>Navigatie</h3>
             <!-- Links -->
@@ -1409,14 +1514,14 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-2 col-sm-4">
           <div class="footer-widget">
             <h3>Account</h3>
             <!-- Links -->
             <ul class="footer-links ">
 
               <li>
-                <a href="privacy.html">
+                <a href="privacy_NL.html">
                   Privacy beleid
                 </a>
               </li>
