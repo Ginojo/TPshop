@@ -683,6 +683,26 @@ PAGE BANNER
   margin-bottom: 2.5rem !important;
 }
 
+#landing {
+  background: url("../images/p5.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 50%;
+  padding: 100px 0 100px 0;
+  position: relative;
+}
+#landing:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #fff1ee, #fff);
+  opacity: 0.6;
+}
 
 
 #student {
@@ -715,7 +735,6 @@ PAGE BANNER
   font-size: 40px;
   line-height: 60px;
   letter-spacing: 10px;
-
 }
 
 .contact-info-block3 {
@@ -754,15 +773,7 @@ PAGE BANNER
 margin-top: -120px;
 }
 
-#banner h4 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: 2px;
 
-}
 
 .contact-info-block4 {
     padding: 20px 20px;
@@ -1625,11 +1636,7 @@ CONTACT PAGE
   .pricing-box {
     margin-top: 30px;
   }
-  .main-navigation.menu-2 {
-    margin-top: 20px;
-    position: absolute;
-    width: 100%;
-  }
+
   .top-info-block {
     margin: 0px 20px;
     text-align: left;
@@ -1652,7 +1659,7 @@ CONTACT PAGE
 }
 
 /*----------------------------------
-    WIDE MOBILE LAYOUT: 7680px
+    WIDE MOBILE LAYOUT: 768px
 -----------------------------------*/
 @media (max-width: 768px) {
   .display-4 {
@@ -1724,7 +1731,7 @@ CONTACT PAGE
     margin-top: 30px;
   }
   .main-navigation.menu-2 {
-    margin-top: 20px;
+    margin-top: 48px;
     position: absolute;
     width: 100%;
   }
@@ -1847,11 +1854,6 @@ CONTACT PAGE
   .pricing-box {
     margin-top: 30px;
   }
-  .main-navigation.menu-2 {
-    margin-top: 20px;
-    position: absolute;
-    width: 100%;
-  }
   .banner-content p {
     padding-right: 0px;
   }
@@ -1859,7 +1861,7 @@ CONTACT PAGE
     margin-top: 30px;
   }
   .main-navigation.menu-2 {
-    margin-top: 20px;
+    margin-top: 48px;
     position: absolute;
     width: 100%;
   }
@@ -1979,7 +1981,7 @@ CONTACT PAGE
     margin-top: 30px;
   }
   .banner-content .display-4 {
-    font-size: 28px;
+    font-size: 48px;
     line-height: 38px;
   }
   .banner-content p {
@@ -1989,7 +1991,7 @@ CONTACT PAGE
     margin-top: 30px;
   }
   .main-navigation.menu-2 {
-    margin-top: 20px;
+    margin-top: 50px;
     position: absolute;
     width: 100%;
   }

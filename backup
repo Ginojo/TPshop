@@ -1,0 +1,43 @@
+<section id="landing">
+  <div class="container">
+
+  </div>
+</section>
+
+
+<div class="row" id="intro">
+  <div style="margin-bottom: 100px;" class="col-12 text-center">
+
+    <h1>GESPECIALISEERD IN SNEL EN KWALITATIEF DRUKWERK</h1>
+
+  </div>
+
+  <br> <br>
+
+  <div class="col-lg-4 col-md-5 col-sm-7 col-xs-12">
+    <div class="contact-info-block4">
+      <h4 style="color:#fff;"><b>
+          <img style="width:3%;" src="images/dot.png" alt=""> Drukwerk op maat. <br>
+          <img style="width:3%;" src="images/dot.png" alt=""> 70 tot 400 gram dikte. <br>
+          <img style="width:3%;" src="images/dot.png" alt=""> Gekleurd of zwart/wit. <br>
+          <img style="width:3%;" src="images/dot.png" alt=""> Enkel of dubbelzijdig.
+
+        </b></h4>
+    </div>
+
+  </div>
+
+  <div class="">
+
+  </div>
+
+  <div class="col-lg-8 col-md-7 col-sm-5 col-xs-12">
+    <div>
+      <h4> <a style="" href="#">Kies</a> uit ons rijk aanbod aan papiersoorten. <br><br> De zelfde dag klaar. Vraag naar onze voorwaarden.
+      </h4>
+    </div>
+
+  </div>
+</div>
+<br>
+<hr>

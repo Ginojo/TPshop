@@ -17,7 +17,7 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
   <meta name="author" content="ginjo.io">
 
-  <title>The printing shop - fastest printing shop of Antwerp</title>
+  <title>The Printing Shop - The Expert For Fast And Qualitative Press-work</title>
 
   <!-- FAVICON -->
 
@@ -55,7 +55,6 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
   <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
 
 
-
   <style media="screen">
     html {
       scroll-behavior: smooth !important;
@@ -69,11 +68,20 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
       overflow-x: hidden;
     }
 
+    #footer img {
+  vertical-align: middle;
+  border-style: none;
+  height: 120px;
+  margin-bottom: 30px;
+  }
 
     /*---------------------------------- -----------------------------------------------------------------------
   Custom CSS
   -----------------------------------*/
 
+    .flag img {
+      height: 30px;
+    }
 
     .card-body h2 {
       color: #fff;
@@ -84,7 +92,7 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     }
 
     #contacttop {
-      padding: 100px 100px 0 0;
+      padding: 100px 10px 0 0;
     }
 
     #service {
@@ -140,45 +148,45 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     4K LAYOUT: 2560px
   -----------------------------------*/
 
-  @media (min-width: 768px) and (max-width: 2560px) {
-  .time {
-    visibility: hidden;
-  }
-    }
 
-    #card {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      margin: -200 0 0 0;
-      padding: 0px 50px 0 50px;
-      background-color: #d15f64ff;
-      text-align: center;
-    }
-
-    .card-body {
-      width: 100%;
-      height: auto;
-    }
-
-
-    .bg-dark,
-    .btn-primary:hover {
-      background: #eb252eff !important;
-      border-color: #eb252eff !important;
-      color: #fff;
-      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.24), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
-    }
-
-
-    @media (min-width: 1652px) and (max-width: 2000px) {
-
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
+    @media (min-width: 992px) and (max-width: 2560px) {
+      .time {
+        visibility: hidden;
       }
+
+
     }
+
+
+    @media (min-width: 768px) and (max-width: 2560px) {
+
+      .time {
+        visibility: hidden;
+        margin-top: -100px;
+      }
+
+
+
+      .card-body {
+        width: 100%;
+        height: auto;
+      }
+
+
+      .bg-dark,
+      .btn-primary:hover {
+        background: #eb252eff !important;
+        border-color: #eb252eff !important;
+        color: #fff;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.24), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
+      }
+
+    }
+
+
+
+
+    @media (min-width: 1652px) and (max-width: 2000px) {}
 
     /*---------------------------------- -----------------------------------------------------------------------
         Default LAYOUT: 1440px
@@ -186,13 +194,6 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
     @media (min-width: 1440px) and (max-width: 2560px) {
 
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
 
       .contact-info-block1 {
 
@@ -210,9 +211,6 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         margin-bottom: 20px;
         display: block;
         color: #eb252eff;
-      }
-      .pay img {
-        margin-bottom: -200px;
       }
 
     }
@@ -222,13 +220,18 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     -----------------------------------*/
 
     @media (max-width: 1440px) {
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
+
+
+      #banner h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 2px;
+
       }
+
 
       .contact-info-block1 {
 
@@ -248,22 +251,20 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         color: #eb252eff;
       }
 
-      .pay img {
-        margin-bottom: -200px;
-      }
+      #footer img {
+    vertical-align: middle;
+    border-style: none;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
     }
 
     /*---------------------------------- -----------------------------------------------------------------------
         MEDIUM LAYOUT: 1280px
     -----------------------------------*/
     @media (max-width: 1024px) {
-      #card {
-        box-shadow: 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
+
 
       .contact-info-block1 {
 
@@ -283,10 +284,13 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         color: #eb252eff;
       }
 
+      #footer img {
+    vertical-align: middle;
+    border-style: none;
+    height: 120px;
+    margin-bottom: 30px;
+}
 
-      .pay img {
-        margin-bottom: -200px;
-      }
 
     }
 
@@ -310,24 +314,54 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         height: 120px;
       }
 
-      .pay img {
-        margin-bottom: -200px;
+    }
+
+
+    @media (max-width: 1200px) {
+      #banner h4 {
+        font-size: 25px;
+
       }
+
+      #footer img {
+    vertical-align: middle;
+    border-style: none;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
     }
 
 
     @media (max-width: 992px) {
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 1px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
+
+      .time {
+        padding-top: 1px;
+
+      }
+
+      #banner #intro {
+        margin-top: 10px;
+
+      }
+
+      #banner h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 2px;
+      }
+
+      .banner-content {
+        padding: 20px;
+        padding-right: 30px;
+        margin-top: 200px;
+
       }
 
       .contact-info-block1 {
-
-
         padding: 55.5px 20px;
         border-radius: 5px;
       }
@@ -343,53 +377,23 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         color: #eb252eff;
       }
 
+      #footer img {
+    vertical-align: middle;
+    border-style: none;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
     }
 
     /* Phones ----------------------------------------------------------------------- */
 
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
 
-  @media (min-width: 425px) and (max-width: 768px) {
-
-.time {
-        margin: 250px 0 0 0;
-
-
-    }
-
-    .contact-info-block2 {
-      border: 1px solid #eee;
-      padding: 40px 20px;
-      border-radius: 5px;
-      margin-bottom: 25px;
-    }
-
-    #card {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      margin: 50px 0 0 0;
-      padding: 20px;
-      background-color: #d15f64ff;
-      text-align: center;
-    }
-
-
-}
-    @media (max-width: 768px) {
-
-      .pay img {
-        margin-bottom: 100px;
-      }
 
       .navbar-dark .navbar-toggler {
         color: rgb(255, 255, 255);
         border-color: rgb(255, 255, 255);
-      }
-
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: -300px 0 0 0;
-        padding: 20px;
-        background-color: #d15f64ff;
-        text-align: center;
       }
 
       #contacttop {
@@ -403,9 +407,43 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         height: 120px;
       }
 
+      #banner #intro {
+        margin-top: 1px;
+
+      }
+
+      #banner h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 2px;
+      }
+
+
+      #banner i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        display: block;
+        color: #eb252eff;
+      }
+
+      #banner h5 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 2px;
+      }
+
+
+
       .banner-content {
-        padding: 80px 0 0 0;
+        padding: 20px;
         padding-right: 30px;
+        margin-top: 200px;
       }
 
       .display-4 {
@@ -414,9 +452,7 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
 
       .contact-info-block1 {
-
-
-        padding: 55.5px 20px;
+        padding: 41px 20px;
         border-radius: 5px;
       }
 
@@ -441,7 +477,9 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     }
 
 
-    @media (max-width: 640px) {
+
+    @media only screen and (min-width: 320px) and (max-width: 425px) {
+
 
       .menu-2 img {
         vertical-align: middle;
@@ -453,106 +491,115 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         color: rgb(255, 255, 255);
         border-color: rgb(255, 255, 255);
       }
+      .contact-info-block2 {
 
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 20px 0 0 0;
-        padding: 20px;
-        background-color: #d15f64ff;
-        text-align: center;
+          padding: 0 0 0;
+            margin:  0 0 0;
       }
 
-      .banner-content {
-        padding-right: 0px;
-      }
+
+        .contact-info-block4 {
+            padding: 20px 20px;
+            border-radius: 10px;
+            margin: 40px;
+            background-color: rgba(235, 36, 45, 0.6);
+            color: #fff;
+            text-align: center;
+        }
+
+
+              .banner-content {
+                padding: 2px;
+                padding-right: 1px;
+              }
 
       .banner-content .display-4 {
         font-size: 50px;
+      }
+
+      #footer img {
+        vertical-align: middle;
+        border-style: none;
+        height: 120px;
+        margin-bottom: 30px;
+      }
+
+    }
+
+    /* Phones ----------------------------------------------------------------------- */
+
+    /* Phones ----------------------------------------------------------------------- */
+
+
+    @media (max-width: 425px) {
+
+      .banner-content {
+
+        margin-top: 200px;
+      }
+    }
+      #service p {
+        font-size: 17px;
+        padding-right: 50px;
+    }
+      }
+
+
+
+        @media (max-width: 375px) {
+          .banner-content {
+
+            margin-top: 200px;
+          }
+
+          }
+
+
+
+        @media only screen and (min-width: 240px) and (max-width: 320px) {
+
+          .navbar-dark .navbar-toggler {
+              color: #fff;
+              border-color: #fff;
+          }
+
+      .menu-2 img {
+          vertical-align: middle;
+          border-style: none;
+          height: 80px;
       }
 
       .contact-info-block2 {
-        border: 1px solid #eee;
-        padding: 40px 20px;
-        border-radius: 5px;
-        margin-bottom: 25px;
+        padding: 0 0 0;
+          margin:  0 0 0;
       }
 
-      .contact-info-block1 {
-        padding: 55.5px 20px;
-        border-radius: 5px;
-          margin-bottom: 25px;
-      }
 
-      #footer img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-        margin-bottom: 30px;
-      }
-
-    }
-
-
-    @media (max-width: 480px) {
-
-      .time {
-        margin: 250px 0 0 0;
-      }
-
-            .pay img {
-              margin-bottom: 20px;
-            }
-
-            .pay2 img {
-              margin: -100px 0 -100px 0;
-              height: 50%;
-            }
-
-      .menu-2 img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-      }
-
-      .navbar-dark .navbar-toggler {
-        color: rgb(255, 255, 255);
-        border-color: rgb(255, 255, 255);
-      }
-
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 1px 0 0 0;
-        padding: 20px;
-        background-color: #d15f64ff;
+      #banner h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 2px;
+        padding-bottom: 45px;
         text-align: center;
-      }
 
+      }
 
       .banner-content {
-        padding-right: 0px;
+        padding: 2px;
+        padding-right: 1px;
+        margin-top: 160px;
       }
 
       .banner-content .display-4 {
-        font-size: 50px;
+        font-size: 40px;
       }
-
-      .contact-info-block1 {
-        padding: 55px 20px;
-        border-radius: 5px;
-        margin-bottom: 25px;
-      }
-
-      #footer img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-        margin-bottom: 30px;
-      }
-
 
     }
-
   </style>
+
 
 </head>
 
@@ -600,15 +647,15 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     <div class="container">
 
 
-            <div style="float: right;" class="flag">
-            <p><a href="index.html"> <img style="height: 30px;" src="images/nl.png" alt="dutch"> </a> / <a href="index2.html"> <img  style="height: 30px;" src="images/uk.png" alt="english"> </a></p>
-            </div>
+      <div style="float: right;" class="flag">
+        <p><a href="index.html"> <img style="height: 30px;" src="images/nl.png" alt="dutch"> </a> / <a href="index2.html"> <img style="height: 30px;" src="images/uk.png" alt="english"> </a></p>
+      </div>
 
       <div class="row">
         <div class="col-lg-2">
           <div class="logo d-none d-lg-block">
             <!-- Brand -->
-            <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <a class="navbar-brand js-scroll-trigger" href="index2.html">
               <img src="images/g936.png" alt="printing shop logo">
             </a>
           </div>
@@ -693,92 +740,59 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
           _________________________________________________________________________________________________________________________________
           _________________________________________________________________________________________________________________________________ -->
 
-<div class="time container">
-
-  <div class="row">
-    <div class="col-lg-3 col-sm-6 col-md-6">
-      <div style="  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" class="contact-info-block2 text-center">
-          <i style="font-size: 40px;  margin-bottom: 20px;  display: block;  color: #eb252eff;" class="ti-time"></i>
-    <h4>Opening hours</h4>
-          <p class="font-weight-500">Mon-Fri 10:00-18:00 <br> Sat-Sun 11:00-17:00 </p>
-          <h5>open 7/7</h5>
-        </div>
-      </div>
-  </div>
-
-</div>
-
-  <section class="banner-area py-5" id="banner">
 
 
 
+    <section class="banner-area py-5" id="banner">
 
-    </div>
+      <!-- Content -->
+      <div class="container">
+        <div class="row  align-items-center justify-content-center">
+          <div class="col-md-12 col-lg-8">
+            <div class="banner-content text-center text-lg-left">
+              <!-- Heading -->
+              <h1 class="display-4 mb-4 ">
+                OPEN 7/7
+              </h1>
 
-    <!-- Content -->
-    <div class="container">
+              <!-- Subheading -->
+              <p class="lead mb-5">
+                Fast and accessible, we are happy to help you.
+              </p>
 
-
-      <div class="row">
-        <div class="col-lg-12 col-sm-12 col-md-12">
-          <div id="card" style="  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" class="contact-info-block text-center">
-            <i class=""></i>
-            <h4 style="color:#fff; font-size: 30px;">Measures concerning COVID-19</h4> <br>
-            <p style="color:#fff; font-size: 20px;" class="lead">
-              From Monday, May 11, 2020, our store will be open again to collect your order.
-              You can deliver your files by mail or via the order <a id="link" style="text-decoration: underline;" href="#contact" class="js-scroll-trigger">button</a> on this. <br><br>So printing such as business cards or printing theses is possible.
-              <br><br> However, we will temporarily not offer copy or scan services to limit physical contact. These services may be possible by appointment for companies and associations.</p>
+              <!-- Button -->
+              <p class="mb-0">
+                <a href="https://theprintingshop.wetransfer.com/" target="_blank" class="btn btn-primary btn-circled">
+                  Place order
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
 
+          <div class="col-lg-4 ">
+            <div class="banner-contact-form bg-white">
+              <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="email" id="email" class="form-control" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Question?"></textarea>
+                </div>
 
-      <div class="row  align-items-center justify-content-center">
-        <div class="col-md-12 col-lg-8">
-          <div class="banner-content text-center text-lg-left">
-            <!-- Heading -->
-            <h1 class="display-4 mb-4 ">
-            OPEN 7/7
-            </h1>
+                <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Send inquiry">
 
-            <!-- Subheading -->
-            <p class="lead mb-5">
-            Fast and accessible, we are happy to help you.
-            </p>
-
-            <!-- Button -->
-            <p class="mb-0">
-              <a href="https://theprintingshop.wetransfer.com/" target="_blank" class="btn btn-primary btn-circled">
-                Place order
-              </a>
-            </p>
+              </form>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 ">
-          <div class="banner-contact-form bg-white">
-            <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
-              <div class="form-group">
-                <input type="text" name="name" id="name" class="form-control" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <input type="text" name="email" id="email" class="form-control" placeholder="E-mail">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Question?"></textarea>
-              </div>
-
-              <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Send message">
-
-            </form>
-          </div>
-        </div>
-      </div> <!-- / .row -->
-    </div> <!-- / .container -->
-  </section>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
 
 
   <!--dienst _________________________________________________________________________________________________________________________________
@@ -808,16 +822,14 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
               <h4>Digital / Offset Printing</h4>
 
               <div class="row">
-                <div class="fix1 col-lg-6 col-md-12 col-sm-12">
+                <div class="col-12">
                   <p> - Flyers <br>
-                                      - Leaflets <br>
-                                      - Business cards <br>
-                                      - Brochures <br>
-                                      - Magazines </p>
-                </div>
-                <div class="fix1 col-lg-6 col-md-12 col-sm-12">
-                  <p> - Posters <br>
-                          - Envelopes </p>
+                    - Leaflets <br>
+                    - Business cards <br>
+                    - Brochures <br>
+                    - Magazines <br>
+                    - Posters <br>
+                    - Envelopes </p>
                 </div>
               </div>
 
@@ -835,7 +847,7 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
               <div class="row">
                 <div class="col-12">
                   <p> - Theses <br> - Courses <br> - Files <br> - Misbooks <br> - Baptism books </p>
-                        </div>
+                </div>
 
               </div>
 
@@ -853,10 +865,10 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
             <div class="service-inner-content media-body">
               <h4> Binding </h4>
 
-                <div class = "row">
-                  <div class = "col-12">
-                    <p> - Rings metal <br> - Rings plastic <br> - Pasting <br> - Folding & Stapling </p>
-                  </div>
+              <div class="row">
+                <div class="col-12">
+                  <p> - Rings metal <br> - Rings plastic <br> - Pasting <br> - Folding & Stapling </p>
+                </div>
 
               </div>
 
@@ -874,32 +886,32 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
               <h4> Finish </h4>
 
 
-                <div class = "row">
-                  <div class = "col-12">
-                    <p> - Cutting <br> - Creasing <br> - Plasticizing <br> - Perforating (2-4 holes) </p>
-                  </div>
+              <div class="row">
+                <div class="col-12">
+                  <p> - Cutting <br> - Creasing <br> - Plasticizing <br> - Perforating (2-4 holes) </p>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="fix col-lg-4 col-md-6">
+          <div class="service-block media">
+            <div class="service-icon">
+              <i class="ti-layout-slider"> </i>
+            </div>
+            <div class="service-inner-content media-body">
+              <h4> Large size </h4>
+
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <p> Max. 90cm x 300cm <br> Paper choice: <br> - 80 gram <br> - 180 gram matt coated <br> - 180 gram gloss coated </p>
 
                 </div>
 
-
-              </div>
-            </div>
-          </div>
-
-          <div class = "fix col-lg-4 col-md-6">
-            <div class = "service-block media">
-              <div class = "service-icon">
-                <i class = "ti-layout-slider"> </i>
-              </div>
-              <div class = "service-inner-content media-body">
-                <h4> Large size </h4>
-
-                <div class = "row">
-                  <div class = "col-md-12 col-sm-12">
-                    <p> Max. 90cm x 300cm <br> Paper choice: <br> - 80 gram <br> - 180 gram matt coated <br> - 180 gram gloss coated </p>
-
-                  </div>
-
               </div>
 
 
@@ -907,18 +919,18 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
           </div>
         </div>
 
-        <div class = "fix col-lg-4 col-md-6">
-            <div class = "service-block media">
-              <div class = "service-icon">
-                <img style = "height: 55%; margin: 0 0 7px 1px;" src = "images / stick3.png" alt = "">
-              </div>
-              <div class = "service-inner-content media-body">
-                <h4> Stickers </h4>
-                <p> - Available in any shape & size <br> - Available from a small run <br> <br> - Temporary or permanent bonding, on strip or on roll </p>
-              </div>
+        <div class="fix col-lg-4 col-md-6">
+          <div class="service-block media">
+            <div class="service-icon">
+              <img style="height: 55%; margin: 0 0 7px 1px;" src="images/stick3.png" alt="">
+            </div>
+            <div class="service-inner-content media-body">
+              <h4> Stickers </h4>
+              <p> - Available in any shape & size <br> - Available from a small run <br> - Temporary or permanent bonding, on strip or on roll </p>
             </div>
           </div>
         </div>
+      </div>
 
       <!--  <div class="row">
         <div class="col-lg-12 text-center">
@@ -951,73 +963,73 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         <div class="col-lg-4 col-md-6 p-0">
           <div class="work-block">
             <img src="images/p1.png" alt="Kleefletters" class="img-fluid">
-            <div class = "overlay-content-block">
-                  <h4> adhesive letters </h4>
-                  <p> For wall, car and windows <br> <b> Delivery time 3 working days </b>
-                  </p>
-                  <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
-                </div>
-              </div>
+            <div class="overlay-content-block">
+              <h4> adhesive letters </h4>
+              <p> For wall, car and windows <br> <b> Delivery time 3 working days </b>
+              </p>
+              <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
             </div>
-            <div class = "col-lg-4 col-md-6 p-0">
-              <div class = "work-block">
-                <img src = "images/p2.png" alt = "Flyers" class = "img-fluid">
-                <div class = "overlay-content-block">
-                  <h4> Flyers </h4>
-                  <p> <br> <b> Urgent pressure can be </b> </p>
-                  <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 p-0">
+          <div class="work-block">
+            <img src="images/p2.png" alt="Flyers" class="img-fluid">
+            <div class="overlay-content-block">
+              <h4> Flyers </h4>
+              <p> <br> <b> Urgent pressure can be </b> </p>
+              <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
             </div>
-            <div class = "col-lg-4 col-md-6 p-0">
-              <div class = "work-block">
-                <img src = "images/p5.png" alt = "Theses" class = "img-fluid">
-                <div class = "overlay-content-block">
-                  <h4> Theses </h4>
-                  <p> <br> <b> Ready in a few hours </b> </p>
-                  <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 p-0">
+          <div class="work-block">
+            <img src="images/p5.png" alt="Theses" class="img-fluid">
+            <div class="overlay-content-block">
+              <h4> Theses </h4>
+              <p> <br> <b> Ready in a few hours </b> </p>
+              <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
             </div>
+          </div>
+        </div>
 
         <div class="col-lg-3 col-md-6 p-0">
           <div class="work-block">
             <img src="images/p4.png" alt="Formaten" class="img-fluid">
             <div class="overlay-content-block">
               <h4> Formats </h4>
-                <p> From A7 to A0 <br> <b> Different sizes can be </b> </p>
-                <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
-              </div>
+              <p> From A7 to A0 <br> <b> Different sizes can be </b> </p>
+              <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
             </div>
           </div>
-          <div class = "col-lg-3 col-md-6 p-0">
-            <div class = "work-block">
-              <img src = "images/p6.png" alt = "Stickers" class = "img-fluid">
-              <div class = "overlay-content-block">
-                <h4> Stickers </h4>
-                <p> Contour cut <br> <b> Delivery time 1 to 3 working days </b> </p>
-                <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 p-0">
+          <div class="work-block">
+            <img src="images/p6.png" alt="Stickers" class="img-fluid">
+            <div class="overlay-content-block">
+              <h4> Stickers </h4>
+              <p> Contour cut <br> <b> Delivery time 1 to 3 working days </b> </p>
+              <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
             </div>
           </div>
-          <div class = "col-lg-3 col-md-6 p-0">
-            <div class = "work-block">
-              <img src = "images/p13.png" alt = "Postcards" class = "img-fluid">
-              <div class = "overlay-content-block">
-                <h4> Postcards </h4>
-                <p> up to 400 grams <br>
-                  <b> Urgent pressure is possible </b> </p>
-                <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 p-0">
+          <div class="work-block">
+            <img src="images/p13.png" alt="Postcards" class="img-fluid">
+            <div class="overlay-content-block">
+              <h4> Postcards </h4>
+              <p> up to 400 grams <br>
+                <b> Urgent pressure is possible </b> </p>
+              <!-- <a href = "single-project.html"> <i class = "fa fa-link"> </i> </a> -->
             </div>
           </div>
-          <div class = "col-lg-3 col-md-6 p-0">
-            <div class = "work-block">
-              <img src = "images/p14.png" alt = "Non woven polyester paper" class = "img-fluid">
-              <div class = "overlay-content-block">
-                <h4> Non woven polyester paper </h4>
-                <p> <br>
-                  <b> Water resistant & unbreakable </b> </p>
+        </div>
+        <div class="col-lg-3 col-md-6 p-0">
+          <div class="work-block">
+            <img src="images/p14.png" alt="Non woven polyester paper" class="img-fluid">
+            <div class="overlay-content-block">
+              <h4> Non woven polyester paper </h4>
+              <p> <br>
+                <b> Water resistant & unbreakable </b> </p>
               <!--    <a href="single-project.html"> <i class="fa fa-link"></i> </a> -->
             </div>
           </div>
@@ -1039,11 +1051,11 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
   <section class="section" id="about">
     <div class="container">
 
-      <div class = "row justify-content-center mb-4">
-        <div class = "col-md-8 col-lg-6 text-center">
-          <div class = "section-heading">
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-8 col-lg-6 text-center">
+          <div class="section-heading">
             <!-- Heading -->
-            <h2 style = "font-size: 35px;"> Antwerp's Printing shop since 25 years. </h2>
+            <h2 style="font-size: 35px;"> Antwerp's Printing shop since 25 years. </h2>
             <p> </p>
 
           </div>
@@ -1063,38 +1075,38 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
                 <div class="img-icon mb-4">
                   <i class="ti-thumb-up"></i>
                 </div>
-                <h4 class = "mb-2"> Expert advice </h4>
-                    <p> Our team of experts are available 7/7 to guide you from A to Z. </p>
-                  </div>
-                </div>
+                <h4 class="mb-2"> Expert advice </h4>
+                <p> Our team of experts are available 7/7 to guide you from A to Z. </p>
+              </div>
+            </div>
 
-                <div class = "col-lg-6 col-sm-6 col-md-6 mb-5">
-                  <div class = "text-center about-block">
-                    <div class = "img-icon mb-4">
-                      <i class = "ti-cup"> </i>
-                    </div>
-                    <h4 class = "mb-2"> Always the best quality </h4>
-                    <p> Year after year, we continue to invest in the best machines on the market to achieve your ideal printed matter. </p>
-                  </div>
+            <div class="col-lg-6 col-sm-6 col-md-6 mb-5">
+              <div class="text-center about-block">
+                <div class="img-icon mb-4">
+                  <i class="ti-cup"> </i>
                 </div>
+                <h4 class="mb-2"> Always the best quality </h4>
+                <p> Year after year, we continue to invest in the best machines on the market to achieve your ideal printed matter. </p>
+              </div>
+            </div>
 
-                <div class = "col-lg-6 col-sm-6 col-md-6">
-                  <div class = "text-center about-block">
-                    <div class = "img-icon mb-4">
-                      <i class = "ti-wallet"> </i>
-                    </div>
-                    <h4 class = "mb-2"> The correct price </h4>
-                    <p> We base our prices on the competitive market conditions that match your demand. </p>
-                  </div>
+            <div class="col-lg-6 col-sm-6 col-md-6">
+              <div class="text-center about-block">
+                <div class="img-icon mb-4">
+                  <i class="ti-wallet"> </i>
                 </div>
+                <h4 class="mb-2"> The correct price </h4>
+                <p> We base our prices on the competitive market conditions that match your demand. </p>
+              </div>
+            </div>
 
-                <div class = "col-lg-6 col-sm-6 col-md-6">
-                  <div class = "text-center about-block">
-                    <div class = "img-icon mb-4">
-                      <i class = "ti-dashboard"> </i>
-                    </div>
-                    <h4 class = "mb-2"> Guaranteed fast service </h4>
-                    <p> We are no stranger to delivering printed materials on the same day. Ask for our conditions. </p>
+            <div class="col-lg-6 col-sm-6 col-md-6">
+              <div class="text-center about-block">
+                <div class="img-icon mb-4">
+                  <i class="ti-dashboard"> </i>
+                </div>
+                <h4 class="mb-2"> Guaranteed fast service </h4>
+                <p> We are no stranger to delivering printed materials on the same day. Ask for our conditions. </p>
               </div>
             </div>
           </div>
@@ -1156,8 +1168,8 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
             <p class="lead">+32 (0) 483 069 172</p>
           </div>
         </div>
-        </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -1167,47 +1179,47 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         <div class="col-md-6 col-lg-6">
           <h5></h5>
           <!-- Heading -->
-          <h2 class = "section-title mb-2">
-              Quotation? <span class = "font-weight-normal"> </span>
-            </h2>
+          <h2 class="section-title mb-2">
+            Quotation? <span class="font-weight-normal"> </span>
+          </h2>
 
-            <!-- Subheading -->
-            <p class = "mb-5">
-              Fill in the form below to request a quote.
-            </p>
+          <!-- Subheading -->
+          <p class="mb-5">
+            Fill in the form below to request a quote.
+          </p>
 
-          </div>
+        </div>
 
-          <div class = "col-md-6 col-lg-6">
+        <div class="col-md-6 col-lg-6">
 
-            <h2 style = "padding top: 10px;" class = "section-title mb-2">
-              To order? <span class = "font-weight-normal"> </span>
-            </h2>
+          <h2 style="padding top: 10px;" class="section-title mb-2">
+            To order? <span class="font-weight-normal"> </span>
+          </h2>
 
-            <p class = "mb-5">
-              Send your file via our order portal.
-            </p>
+          <p class="mb-5">
+            Send your file via our order portal.
+          </p>
 
 
 
           <p class="mb-0">
             <a href="https://theprintingshop.wetransfer.com/" target="_blank" class="btn btn-primary btn-circled">
-                    Place an order
-                  </a>
-                </p>
+              Place an order
+            </a>
+          </p>
 
-                <br>
+          <br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-12">
+              <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                Your message has been sent successfully.
               </div>
-            </div>
-
-            <div class = "row">
-              <div class = "col-lg-6">
-
-                <div class = "row">
-                  <div class = "col-12">
-                    <div class = "alert alert-success contact__msg" style = "display: none" role = "alert">
-                      Your message has been sent successfully.
-                    </div>
             </div>
           </div>
           <!-- end message -->
@@ -1304,133 +1316,159 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
           </form>
           <!-- End Contacts Form -->
         </div>
-
-        <div style="padding-top: 23px;" class="col-lg-6 col-md-6">
-          <!-- START MAP -->
-          <div id="map"></div>
-          <!-- END MAP -->
-        </div>
+        <!-- END MAP   <div style="padding-top: 23px;" class="col-lg-6 col-md-6">
+             START MAP
+            <div id="map"></div> -->
       </div>
+    </div>
     </div>
   </section>
 
 
   <div class="container">
 
-    <img style="float:right;"
-                            src="https://www.merchantequip.com/image/?logos=v|m|p|me&height=64" alt="Merchant Equipment Store Credit Card Logos"/>
-      </div>
+    <img style="float:right;" src="https://www.merchantequip.com/image/?logos=v|m|p|me&height=64" alt="Merchant Equipment Store Credit Card Logos" />
+  </div>
 
-<br> <br> <br>
+  <br> <br> <br>
 
   <!--Footer _________________________________________________________________________________________________________________________________
-          _________________________________________________________________________________________________________________________________ -->
+        _________________________________________________________________________________________________________________________________ -->
 
 
-  <footer class="section " id="footer">
-    <div class="overlay footer-overlay"></div>
-    <!--Content -->
-    <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-lg-4 col-sm-12">
-          <div class="footer-widget">
-            <!-- Brand -->
-            <a href="#" class="footer-brand text-white">
-              <a class="navbar-brand js-scroll-trigger" href="index.html">
-                <img src="images/g1037.png" alt="printing shop logo">
-              </a>
+          <footer class="section " id="footer">
+            <div class="overlay footer-overlay"></div>
+            <!--Content -->
+            <div class="container">
+              <div class="row">
+                    <!--column1 -->
+                <div class="col-md-4 col-lg-4">
 
-            </a>
-          </div>
-        </div>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-12 ">
+                      <div class="footer-widget">
+                        <!-- Brand -->
+                        <a href="#" class="footer-brand text-white">
+                          <a class="navbar-brand js-scroll-trigger" href="index2.html">
+                            <img src="images/g1037.png" alt="printing shop logo">
+                          </a>
 
-        <div class="col-lg-3 ml-lg-auto col-sm-12">
+                        </a>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-12 ">
 
-          <div class="footer-widget">
-            <h3>Social Media</h3>
-            <!-- Links -->
-            <ul class="list-unstyled footer-links">
-              <li><a href="https://www.facebook.com/KoppieKopie.be"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                    <div class="footer-widget">
 
-            </ul>
-          </div>
-
-        </div>
-
-
-        <div class="col-lg-2 col-sm-6">
-          <div class="footer-widget">
-            <h3>Navigation</h3>
-            <!-- Links -->
-            <ul class="footer-links ">
-
-              <li class="nav-item ">
-                <a href="index.html" class="nav-link js-scroll-trigger">
-                  Home
-                </a>
-              </li>
-
-              <li class="nav-item ">
-                <a href="#service" class="nav-link js-scroll-trigger">
-                  Services
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a href="#work" class="nav-link js-scroll-trigger">
-                  Samples
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a href="#about" class="nav-link js-scroll-trigger">
-                  About us
-                </a>
-              </li>
-
-              <li class="nav-item ">
-                <a href="#contact-info" class="nav-link">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-sm-6">
-          <div class="footer-widget">
-            <h3>Account</h3>
-            <!-- Links -->
-            <ul class="footer-links ">
-
-              <li>
-                <a href="privacy_EN.html">
-                  Privacy policy
-                </a>
-              </li>
+                        <div class="contact-info-block2">
+                          <h3 style="color: #fff;">Opening hours</h3>
+                          <p style="color: #fff;">Mon-Fry 10:00-18:00 <br> Sat-Sun 11:00-17:00 </p>
+                              <h3><b> <i>Open 7/7</i> </b></h3>
+                        </div>
 
 
-              <li>
-                <!--  <a href="faq.html">
-                  Veel gestelde vragen
-                </a> -->
-              </li>
-            </ul>
-          </div>
-        </div>
+                  </div>
 
-      </div> <!-- / .row -->
+                                <br><br>
+
+                            </div>
+
+                </div>
+                  </div>
 
 
 
-      <div class="row text-right pt-5">
-        <div class="col-lg-12">
-          <!-- Copyright -->
-          <p class="footer-copy ">
-            &copy; Copyright <span class="current-year"><a href="https://ginjo.io/">ginjo.io</a> </span> All rights reserved.
-          </p>
-        </div>
-      </div> <!-- / .row -->
-    </div> <!-- / .container -->
-  </footer>
+                <!--column2 -->
+                <div class="col-md-8 col-lg-8">
+
+                  <div class="row">
+
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <div class="footer-widget">
+                          <h3>Navigation</h3>
+                          <!-- Links -->
+                          <ul class="footer-links ">
+
+                            <li class="nav-item ">
+                              <a href="index.html" class="nav-link js-scroll-trigger">
+                                Home
+                              </a>
+                            </li>
+
+                            <li class="nav-item ">
+                              <a href="#service" class="nav-link js-scroll-trigger">
+                                Services
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a href="#work" class="nav-link js-scroll-trigger">
+                                Samples
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                              <a href="#about" class="nav-link js-scroll-trigger">
+                                About us
+                              </a>
+                            </li>
+
+                            <li class="nav-item ">
+                              <a href="#contact-info" class="nav-link">
+                                Contact
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                          <div class="footer-widget">
+                            <h3>Social Media</h3>
+                            <!-- Links -->
+                            <ul class="list-unstyled footer-links">
+                              <li><a href="https://www.facebook.com/KoppieKopie.be"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                             <div class="col-sm-4 col-md-4 col-lg-4">
+                               <div class="footer-widget">
+                                 <h3>Account</h3>
+                                 <!-- Links -->
+                                 <ul class="footer-links ">
+
+                                   <li>
+                                     <a href="privacy_NL.html">
+                                       Privacy policy
+                                     </a>
+                                   </li>
+
+
+                                   <li>
+                                     <!--  <a href="faq.html">
+                                       Veel gestelde vragen
+                                     </a> -->
+                                   </li>
+                                 </ul>
+                               </div>
+                        </div>
+
+
+              </div> <!-- / .row -->
+
+            </div>
+                  </div>
+                </div>
+
+              <div class="row text-right pt-5">
+                <div class="col-lg-12">
+                  <!-- Copyright -->
+                  <p class="footer-copy ">
+                    &copy; Copyright <span class="current-year"><a href="https://ginjo.io/">ginjo.io</a> </span> All rights reserved.
+                  </p>
+                </div>
+              </div> <!-- / .row -->
+            </div> <!-- / .container -->
+          </footer>
 
 
 
