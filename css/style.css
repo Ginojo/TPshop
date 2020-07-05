@@ -527,7 +527,7 @@ PAGE BANNER
 }
 
 .main-nav {
-  margin-bottom: -45px;
+  margin-bottom: 45px;
   z-index: 999;
 }
 
@@ -869,7 +869,7 @@ ABOUT-2
 
 
 .pt-6 {
-  padding-top: 4.5rem;
+  padding-top: 0.5rem;
 }
 
 .img-icon i {
@@ -1587,7 +1587,7 @@ CONTACT PAGE
     margin-bottom: 10px;
   }
   .main-navigation {
-    margin-top: 20px;
+    margin-top: ;
   }
   .main-nav .navbar-brand h4 {
     color: #fff;
