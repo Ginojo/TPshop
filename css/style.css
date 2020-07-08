@@ -322,7 +322,8 @@ a:hover, a:focus {
 }
 
 .top-info-block {
-  margin-right: 30px;
+  margin: 0px 20px;
+text-align: left;
 }
 
 .top-info-block h5, .top-info-block p {
@@ -1464,6 +1465,7 @@ CONTACT PAGE
   color: #888;
   font-size: 16px;
   position: relative;
+  padding-right: 10px;
 }
 
 .footer-copy:before {
