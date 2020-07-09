@@ -45,7 +45,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 15px;
   line-height: 1.75;
   margin: 0;
@@ -726,9 +726,7 @@ PAGE BANNER
   background: linear-gradient(to left, #fff1ee, #fff);
   opacity: 0.6;
 }
-#student .block {
-  color: #fff;
-}
+
 
 #student .block h4 {
   font-family: 'Alfa Slab One', sans-serif !important;
@@ -736,6 +734,27 @@ PAGE BANNER
   font-size: 40px;
   line-height: 60px;
   letter-spacing: 10px;
+    color: #fff;
+}
+
+#student .block h3 {
+  font-family: "Muli", sans-serif !important;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: 5px;
+  text-align: center;
+    color: #fff;
+}
+
+#student .block h2 {
+  font-family: "Muli", sans-serif !important;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: left;
+  color:#000;
 }
 
 .contact-info-block3 {
@@ -751,7 +770,7 @@ PAGE BANNER
     border-radius: 1px;
     margin: auto;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: rgba(233, 100, 106, 0.8);
+    background-color: rgba(223, 128, 133, 0.8);
     width: 100%
 }
 
