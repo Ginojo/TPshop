@@ -168,3 +168,32 @@
           padding-top: 40px;
       }
       }
+
+
+      -----------
+
+
+
+                  <br> <br>
+                  <div style="margin-right:50px;" class="card">
+
+                    <header class="card-header">
+                      <a href="#" data-toggle="collapse" data-target="#collapse22" aria-expanded="true" class="">
+
+                        <span class="title">Lees Instructies</span>
+                      </a>
+                    </header>
+
+                    <div class="panel-collapse  collapse show" id="collapse22" style="">
+                      <article class="card-body">
+
+                        - Maak eerst en vooral een gratis account aan bij wetransfer. <br>
+                        - Stuur enkel PDF formaat, deze bied de beste kleur kwaliteit. <br>
+                        - Geef duidelijk weer: kleur of zwart/wit. <br>
+                        - Geef duidelijk weer: enkel of dubbelzijdig. <br>
+                        - Geef duidelijk het formaat weer. Vraag naar onze voorwaarden.
+                      </article> <!-- card-body.// -->
+                    </div> <!-- collapse .// -->
+
+
+                  </div> <!-- card.// -->
