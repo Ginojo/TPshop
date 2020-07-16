@@ -33,401 +33,879 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <style media="screen">
-    /*---------------------------------- -----------------------------------------------------------------------
-    4K LAYOUT: 2560px
-  -----------------------------------*/
 
-    #card {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      margin:  0 0 0;
-      padding: 0px 50px 0 50px;
-      background-color: #d15f64ff;
-      text-align: center;
-    }
-
-    .card-body {
-      width: 100%;
-      height: auto;
-    }
-
-    #footer img {
-    vertical-align: middle;
-    border-style: none;
-    height: 120px;
-    margin-bottom: 30px;
-}
-
-    @media (min-width: 1652px) and (max-width: 2000px) {
-
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
-  }
-
-    @media (min-width: 1440px) and (max-width: 2560px) {
-
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
+    <style media="screen">
+      html {
+        scroll-behavior: smooth !important;
       }
 
-      .contact-info-block1 {
-
-
-        padding: 40px 20px;
-        border-radius: 5px;
+      /*----------------------------------
+    Custom: removes white edge on right side of screen
+    -----------------------------------*/
+      html,
+      body {
+        overflow-x: hidden;
       }
 
-      .contact-info-block1 h4 {
-        margin-bottom: 0px;
+      #footer img {
+        vertical-align: middle;
+        border-style: none;
+        height: 120px;
+        margin-bottom: 30px;
       }
 
-      .contact-info-block1 i {
-        font-size: 40px;
-        margin-bottom: 20px;
-        display: block;
-        color: #eb252eff;
+      #contacttop .top {
+        padding-right: 1px;
+        padding-left: 1px;
       }
 
 
-    }
 
-    /*---------------------------------- -----------------------------------------------------------------------
-        Default LAYOUT: 1440px
+      /*---------------------------------- -----------------------------------------------------------------------
+    Custom CSS
     -----------------------------------*/
 
-    @media (max-width: 1440px) {
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin:  100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
+      .flag img {
+        height: 30px;
       }
 
-      .contact-info-block1 {
-
-        padding: 40px 20px;
-        border-radius: 5px;
+      .card-body h2 {
+        color: #fff;
       }
 
-      .contact-info-block1 h4 {
-        margin-bottom: 0px;
-      }
-
-      .contact-info-block1 i {
-        font-size: 40px;
-        margin-bottom: 20px;
-        display: block;
-        color: #eb252eff;
-      }
-
-
-    }
-
-    /*---------------------------------- -----------------------------------------------------------------------
-        MEDIUM LAYOUT: 1280px
-    -----------------------------------*/
-    @media (max-width: 1024px) {
-      #card {
-        box-shadow:  8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 100px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
-
-      .contact-info-block1 {
-
-        padding: 55px 20px;
-        border-radius: 5px;
-      }
-
-      .contact-info-block1 h4 {
-        margin-bottom: 0px;
-      }
-
-      .contact-info-block1 i {
-        font-size: 40px;
-        margin-bottom: 20px;
-        display: block;
-        color: #eb252eff;
-      }
-
-
-    }
-
-    /*---------------------------------- ----------------------------------------------------------------------
-        TABLET LAYOUT: 768px
-------------------------------------*/
-
-
-    @media (max-width: 992px) {
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 200px 0 0 0;
-        padding: 0px 50px 0 50px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
-
-      .contact-info-block1 {
-
-        padding: 55px 20px;
-        border-radius: 5px;
-
+      .card-body h3 {
+        color: #fff;
       }
 
       #contacttop {
-    padding-top: 50px;
-}
-
-      .contact-info-block1 h4 {
-        margin-bottom: 0px;
+        padding: 100px 10px 0 0;
       }
 
-      .contact-info-block1 i {
-        font-size: 40px;
-        margin-bottom: 20px;
-        display: block;
+      #service {
+        background-color: #f8f9fa;
+      }
+
+      #service h4 {
+        font-size: 25px;
+      }
+
+      #service p {
+        font-size: 17px;
+      }
+
+      #work {
+        padding-top: 100px;
+      }
+
+      #about {
+        background-color: #f8f9fa;
+      }
+
+      #link {
+        color: #fff;
+      }
+
+      #link:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      #link1:hover {
+        text-decoration: none;
         color: #eb252eff;
       }
 
-    }
+      .fix {
+        position: relative;
+        width: 100%;
+        padding-right: 2px !important;
+        padding-left: 10px !important;
+      }
 
-    /* Phones ----------------------------------------------------------------------- */
+      .fix1 {
+        position: relative;
+        width: 100%;
+        padding-right: 2px !important;
+        padding-left: 10px !important;
+      }
 
 
-    @media (max-width: 768px) {
+      /*---------------------------------- -----------------------------------------------------------------------
+      4K LAYOUT: 2560px
+    -----------------------------------*/
 
-      .navbar-dark .navbar-toggler {
+
+
+
+      @media (min-width: 768px) and (max-width: 2560px) {
+
+
+
+
+        .card-body {
+          width: 100%;
+          height: auto;
+        }
+
+
+        .bg-dark,
+        .btn-primary:hover {
+          background: #eb252eff !important;
+          border-color: #eb252eff !important;
+          color: #fff;
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.24), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
+        }
+
+      }
+
+
+
+
+      @media (min-width: 1652px) and (max-width: 2000px) {}
+
+      /*---------------------------------- -----------------------------------------------------------------------
+          Default LAYOUT: 1440px
+      -----------------------------------*/
+
+      @media (min-width: 1440px) and (max-width: 2560px) {
+
+
+        .contact-info-block1 {
+
+
+          padding: 55.5px 20px;
+          border-radius: 5px;
+        }
+
+        .contact-info-block1 h4 {
+          margin-bottom: 0px;
+        }
+
+        .contact-info-block1 i {
+          font-size: 40px;
+          margin-bottom: 20px;
+          display: block;
+          color: #eb252eff;
+        }
+
+      }
+
+      /*---------------------------------- -----------------------------------------------------------------------
+          Default LAYOUT: 1440px
+      -----------------------------------*/
+
+      @media (max-width: 1440px) {
+
+
+        #banner h4 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 60px;
+          letter-spacing: 2px;
+
+        }
+
+
+        .flag2 {
+          display: hidden;
+
+        }
+
+
+        .contact-info-block1 {
+
+
+          padding: 55.5px 20px;
+          border-radius: 5px;
+        }
+
+        .contact-info-block1 h4 {
+          margin-bottom: 0px;
+        }
+
+        .contact-info-block1 i {
+          font-size: 40px;
+          margin-bottom: 20px;
+          display: block;
+          color: #eb252eff;
+        }
+
+        #footer img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+          margin-bottom: 30px;
+        }
+
+      }
+
+      /*---------------------------------- -----------------------------------------------------------------------
+          MEDIUM LAYOUT: 1280px
+      -----------------------------------*/
+      @media (max-width: 1024px) {
+
+
+        .contact-info-block1 {
+
+
+          padding: 55.5px 20px;
+          border-radius: 5px;
+        }
+
+        .contact-info-block1 h4 {
+          margin-bottom: 0px;
+        }
+
+        .contact-info-block1 i {
+          font-size: 40px;
+          margin-bottom: 20px;
+          display: block;
+          color: #eb252eff;
+        }
+
+        #footer img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+          margin-bottom: 30px;
+        }
+
+      }
+
+      /*---------------------------------- ----------------------------------------------------------------------
+          TABLET LAYOUT: 992px
+  ------------------------------------*/
+
+
+
+      @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        #banner h4 {
+          font-size: 25px;
+
+        }
+
+        .contact-info-block1 {
+          padding: 55.5px 20px;
+          border-radius: 5px;
+        }
+
+        #footer img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+          margin-bottom: 30px;
+        }
+
+      }
+
+
+      @media (max-width: 991px) {
+
+        #banner #intro {
+          margin-top: 10px;
+
+        }
+
+        #banner h4 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 40px;
+          letter-spacing: 2px;
+        }
+
+        .banner-content {
+          padding: 20px;
+          padding-right: 30px;
+          margin-top: 1px;
+        }
+
+
+        .pt-6 {
+          padding-top: 4.5rem;
+        }
+
+        .contact-info-block1 {
+          padding: 55.5px 20px;
+          border-radius: 5px;
+        }
+
+        .contact-info-block1 h4 {
+          margin-bottom: 0px;
+        }
+
+        .contact-info-block1 i {
+          font-size: 40px;
+          margin-bottom: 20px;
+          display: block;
+          color: #eb252eff;
+        }
+
+        #footer img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+          margin-bottom: 30px;
+        }
+
+      }
+
+
+
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+        .navbar-dark .navbar-toggler {
           color: rgb(255, 255, 255);
           border-color: rgb(255, 255, 255);
-      }
+        }
 
-      #card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin:  200px 0 0 0;
-        padding: 20px;
-        background-color: #d15f64ff;
-        text-align: center;
-      }
+        #contacttop {
+          padding: 40px 0 0 0;
+        }
 
-      #contacttop {
-        padding-top: 50px;
-        padding-right: 70px;
-      }
-
-      .menu-2 img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-      }
-
-
-
-      #footer img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-        margin-bottom: 30px;
-      }
-
-    }
-
-
-    @media (max-width: 640px) {
-
-      .menu-2 img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-      }
-
-      .navbar-dark .navbar-toggler {
-    color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
-}
-
-.section {
-    padding: 60px 0px;
-    margin-top: 200px;
-}
-
-      #footer img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-        margin-bottom: 30px;
-      }
-
-    }
-
-
-    @media (max-width: 480px) {
-
-      .menu-2 img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-      }
-
-      .navbar-dark .navbar-toggler {
-    color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
-}
-
-.section {
-    padding: 60px 0px;
-    margin-top: 200px;
-}
-
-      #footer img {
-        vertical-align: middle;
-        border-style: none;
-        height: 120px;
-        margin-bottom: 30px;
-      }
-
-
-    }
-
-
-    #contacttop {
-      padding: 100px 10px 0 0;
+        #student .block h4 {
+      font-family: 'Alfa Slab One', sans-serif !important;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 60px;
+      letter-spacing: 10px;
+      color: #fff;
   }
 
-    html {
-      scroll-behavior: smooth !important;
-    }
+        .logo-bar {
+          padding: 40px 0px 100px 0px;
+        }
 
-    html,
-    body {
-      overflow-x: hidden;
-    }
-  </style>
+        .main-navigation {
+          margin-top: -60px;
+        }
 
-</head>
+        .menu-2 img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+        }
 
-
-<body id="page-top">
-  <!-- LOADER TEMPLATE -->
-
-  <div id="page-loader">
-    <div class="loader-icon fa fa-spin colored-border"></div>
-  </div>
-
- <!-- /LOADER TEMPLATE -->
-
- <div class="logo-bar d-none d-md-block d-lg-block bg-light">
-   <div class="container">
-
-     <div style="float: right;" class="flag">
-     <p><a href="privacy_NL.html"> <img style="height: 30px;" src="images/nl.png" alt="dutch"> </a> / <a href="privacy_EN.html"> <img  style="height: 30px;" src="images/uk.png" alt="english"> </a></p>
-     </div>
+        .contact-info-block1 {
+          padding: 41px 20px;
+          border-radius: 5px;
+        }
+      }
 
 
-     <div class="row">
-       <div class="col-lg-2">
-         <div class="logo d-none d-lg-block">
-           <!-- Brand -->
-           <a class="navbar-brand js-scroll-trigger" href="index2.html">
-             <img src="images/g936.png" alt="printing shop logo">
-           </a>
-         </div>
-       </div>
+      @media only screen and (min-width: 576px) and (max-width: 768px) {
 
-       <div id="contacttop" class="col-lg-8 justify-content-end ml-lg-auto d-flex col-12">
-         <div class="top-info-block d-inline-flex">
-           <div class="icon-block">
-             <i class="ti-mobile"></i>
-           </div>
-           <div class="info-block">
-             <h5 class="font-weight-500">+32 (0) 483 069 172</h5>
-             <p>Telefoon / Whatsapp</p>
-           </div>
-         </div>
+        .contact-info-block1 {
+          padding: 55.5px 20px;
+          border-radius: 5px;
+        }
 
-         <div class="top-info-block d-inline-flex">
-           <div class="icon-block">
-             <i class="ti-email"></i>
-           </div>
-           <div class="info-block">
-             <h5 class="font-weight-500">info@tpshop.be</h5>
-             <p>Email</p>
-           </div>
-         </div>
-         <div class="top-info-block d-inline-flex">
-           <div class="icon-block">
-             <i class="ti-time"></i>
-           </div>
-           <div class="info-block">
-             <h5 class="font-weight-500">Ma-Vr 10:00-18:00 <br> Za-Zo 11:00-17:00 </h5>
-             <p>7/7 geopend</p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+        .banner-content {
+          margin-right: -60px;
+        }
 
- <!-- NAVBAR
-   ================================================= -->
-   <br><br><br>
- <div class="main-navigation menu-2" id="mainmenu-area">
-   <div class="container">
-     <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav navbar-togglable rounded-radius">
+        .banner-contact-form {
+          margin-right: -55px;
+        }
+      }
 
-       <a class="navbar-brand d-lg-none d-block" href="">
-         <img src="images/g869.png" alt="The printing shop">
-       </a>
-       <!-- Toggler -->
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="fa fa-bars"></span>
-       </button>
 
-       <!-- Collapse -->
-       <div class="collapse navbar-collapse" id="navbarCollapse">
-         <!-- Links -->
-         <ul class="navbar-nav ">
-           <!--<li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               Home
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="navbarWelcome">
-                                <a class="dropdown-item " href="index.html">
-                                   Home-1
-                               </a>
-                               <a class="dropdown-item " href="index-2.html">
-                                   Home-2
-                               </a>
-                               <a class="dropdown-item " href="index-3.html">
-                                   Home-3
-                               </a>
-                               <a class="dropdown-item " href="index-4.html">
-                                   Home-4
-                               </a>
-                           </div>
-                       </li>  -->
+      @media only screen and (min-width: 240px) and (max-width: 576px) {
 
-           <li class="nav-item ">
-             <a href="index.html" class="nav-link js-scroll-trigger">
-               Home
-             </a>
-           </li>
-         </ul>
-       </div> <!-- / .navbar-collapse -->
-     </nav>
-   </div> <!-- / .container -->
- </div>
+        .contact-info-block1 {
+          padding: 41px 20px;
+          border-radius: 5px;
+          margin-bottom: 25px;
+        }
+
+        .banner-content {
+          margin-right: ;
+        }
+
+        .banner-contact-form {
+          margin-right: ;
+        }
+
+        .btn {
+          font-size: .6875rem;
+          font-weight: 700;
+          position: relative;
+          text-transform: uppercase;
+          padding: 0.5rem 1.7rem;
+        }
+      }
+
+
+          @media only screen and (min-width: 425px) and (max-width: 640px) {
+
+
+                  .banner-content {
+                    padding: 20px;
+                    padding-right: 30px;
+                    margin-top: 250px;
+                  }
+
+            }
+
+
+                    @media only screen and (min-width: 640px) and (max-width: 768px) {
+
+
+                            .banner-content {
+                              padding: 20px;
+                              padding-right: 30px;
+                              margin-top: 0px;
+                            }
+
+                      }
+
+
+      /* Phones ----------------------------------------------------------------------- */
+
+      @media only screen and (min-width: 425px) and (max-width: 768px) {
+
+
+        .navbar-dark .navbar-toggler {
+          color: rgb(255, 255, 255);
+          border-color: rgb(255, 255, 255);
+        }
+
+        #contacttop {
+          padding-top: 50px;
+          padding-right: 70px;
+        }
+
+        .menu-2 img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+        }
+
+        #banner #intro {
+          margin-top: 1px;
+
+        }
+
+        #banner h4 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 2px;
+        }
+
+        #banner h5 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 60px;
+          letter-spacing: 2px;
+        }
+
+
+
+        #student .block h4 {
+          font-family: 'Alfa Slab One', sans-serif !important;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 60px;
+          letter-spacing: 10px;
+          color: #fff;
+        }
+
+        .contact-info-block3 {
+          padding: 20px 20px;
+          border-radius: 20px;
+          margin: auto;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          background-color: rgba(235, 36, 45, 0.6);
+        }
+
+        .display-4 {
+          font-size: 3.5rem;
+        }
+
+        .contact-info-block1 h4 {
+          margin-bottom: 0px;
+        }
+
+        .contact-info-block1 i {
+          font-size: 40px;
+          margin-bottom: 20px;
+          display: block;
+          color: #eb252eff;
+        }
+
+        #footer img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+          margin-bottom: 30px;
+        }
+
+      }
+
+      @media only screen and (min-width: 320px) and (max-width: 425px) {
+
+
+        .menu-2 img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+        }
+
+        .navbar-dark .navbar-toggler {
+          color: rgb(255, 255, 255);
+          border-color: rgb(255, 255, 255);
+        }
+
+        .contact-info-block2 {
+
+          padding: 0 0 0;
+          margin: 0 0 0;
+        }
+
+
+        .contact-info-block4 {
+          padding: 20px 20px;
+          border-radius: 10px;
+          margin: 40px;
+          background-color: rgba(235, 36, 45, 0.6);
+          color: #fff;
+          text-align: center;
+        }
+
+
+
+        #student .block h4 {
+          font-family: 'Alfa Slab One', sans-serif !important;
+          font-weight: 300;
+          font-size: 25px;
+          line-height: 60px;
+          letter-spacing: 10px;
+          color: #fff;
+        }
+
+        #student .block h3 {
+          font-family: "Muli", sans-serif !important;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 40px;
+          letter-spacing: 5px;
+          text-align: center;
+          color: #fff;
+        }
+
+        #student .block h2 {
+          font-family: "Muli", sans-serif !important;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 30px;
+          letter-spacing: 2px;
+          text-align: left;
+          color: #000;
+        }
+
+        .contact-info-block3 {
+          padding: 10px 20px;
+          border-radius: 20px;
+          margin: auto;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          background-color: rgba(235, 36, 45, 0.6);
+        }
+
+
+
+        .banner-content {
+          padding: 2px;
+          padding-right: 1px;
+        }
+
+        .banner-content .display-4 {
+          font-size: 35px;
+        }
+
+        #footer img {
+          vertical-align: middle;
+          border-style: none;
+          height: 120px;
+          margin-bottom: 30px;
+        }
+
+      }
+
+      /* Phones ----------------------------------------------------------------------- */
+
+      /* Phones ----------------------------------------------------------------------- */
+
+
+      @media (max-width: 425px) {
+
+        .banner-content {
+
+          margin-top: 250px;
+        }
+      }
+
+      #service p {
+        font-size: 17px;
+        padding-right: 50px;
+      }
+      }
+
+
+
+      @media (max-width: 375px) {
+        .banner-content {
+          margin-top: 200px;
+        }
+
+      }
+
+
+
+      @media only screen and (min-width: 240px) and (max-width: 320px) {
+
+        .navbar-dark .navbar-toggler {
+          color: #fff;
+          border-color: #fff;
+        }
+
+        .menu-2 img {
+          vertical-align: middle;
+          border-style: none;
+          height: 80px;
+        }
+
+        .contact-info-block2 {
+          padding: 0 0 0;
+          margin: 0 0 0;
+        }
+
+
+        #banner h4 {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 2px;
+          padding-bottom: 45px;
+          text-align: center;
+
+        }
+
+
+        .banner-content {
+          padding: 2px;
+          padding-right: 1px;
+          margin-top: 190px;
+        }
+
+        .banner-content .display-4 {
+          font-size: 40px;
+        }
+
+      }
+
+      /* modal */
+
+      .modal-dialog .modal-content {
+        box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+        border-radius: 6px;
+        border: none;
+      }
+
+      .modal-dialog .modal-header {
+        border-bottom: none;
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-bottom: 0;
+        padding-left: 24px;
+      }
+
+      .modal-dialog .modal-header .modal-title {
+        font-size: 17px;
+        font-weight: 300;
+        color: #3C4858;
+        margin-bottom: 0;
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+
+      .modal-dialog .modal-body {
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+        color: #3C4858;
+      }
+
+      .modal .modal-header .close i {
+        font-size: 16px;
+        color: #999;
+      }
+
+      .modal-dialog .modal-footer {
+        border-top: none;
+        padding: 24px !important;
+      }
+
+      .modal-dialog .modal-body+.modal-footer {
+        padding-top: 0 !important;
+      }
+
+      .modal-dialog .modal-footer button {
+        margin: 0 !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        width: auto;
+      }
+
+
+              .hover:hover {
+
+           color: #ffffff;
+           box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.71);
+              }
+
+    </style>
+
+
+  </head>
+
+
+  <!-- body _________________________________________________________________________________________________________________________________
+          _________________________________________________________________________________________________________________________________
+          _________________________________________________________________________________________________________________________________ -->
+
+
+  <body id="page-top">
+
+
+
+    <!-- LOADER TEMPLATE -->
+
+    <div id="page-loader">
+      <div class="loader-icon fa fa-spin colored-border"></div>
+    </div>
+
+    <!--Modal: modalCookie-->
+    <div class="modal fade top" id="modalCookie1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
+      <div class="modal-dialog modal-frame modal-top modal-notify modal-info" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Body-->
+          <div class="modal-body">
+            <div class="row d-flex justify-content-center align-items-center">
+
+              <p style="text-align: center;" class="pt-3 pr-2">We use cookies for improving the functionality of this website.</p>
+
+              <!--  <a style="color:#fff;" type="button" href="privacy.html" class="btn btn-primary">Privacy Beleid
+                <i class="fas fa-book ml-1"></i> -->
+              </a>
+              <a style="color:#fff;" type="button" class="btn btn-primary" data-dismiss="modal">Ok, thanks</a>
+            </div>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+
+    <!-- /LOADER TEMPLATE -->
+    <div class="logo-bar d-none d-md-block d-lg-block bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="logo d-none d-lg-block">
+              <!-- Brand -->
+              <a class="navbar-brand js-scroll-trigger" href="index2.html">
+                <img src="images/g936.png" alt="printing shop logo">
+              </a>
+            </div>
+          </div>
+
+          <div id="contacttop" class="col-lg-8 justify-content-end ml-lg-auto d-flex col-12">
+            <div class="row">
+            <div class="top col-md-4 col-lg-4">
+              <div class="top-info-block d-inline-flex">
+                <div class="icon-block">
+                  <i class="ti-mobile"></i>
+                </div>
+                <div class="info-block">
+                  <h5 class="font-weight-500">+32 (0) 483 069 172</h5>
+                  <p>Phone / Whatsapp</p>
+                </div>
+              </div>
+            </div>
+            <div class="top col-md-4 col-lg-4">
+              <div class="top-info-block d-inline-flex">
+                <div class="icon-block">
+                  <i class="ti-email"></i>
+                </div>
+                <div class="info-block">
+                  <h5 class="font-weight-500">info@tpshop.be</h5>
+                  <p>E-mail</p>
+                </div>
+              </div>
+            </div>
+            <div class="top col-md-4 col-lg-4">
+              <div class="top-info-block d-inline-flex">
+                <div class="icon-block">
+                  <i class="ti-time"></i>
+                </div>
+                <div class="info-block">
+                  <h5 class="font-weight-500">Mon-Fry 10:00-18:00 <br> Sat-Sun 11:00-17:00 </h5>
+                  <p><b>WATCH OUT:</b> July-August closed on sunday</p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--navigatie _________________________________________________________________________________________________________________________________
+            _________________________________________________________________________________________________________________________________
+            _________________________________________________________________________________________________________________________________ -->
+
+    <!-- Navigation -->
+    <div class="main-navigation menu-2" id="mainmenu-area">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav navbar-togglable rounded-radius" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand d-lg-none d-block" href="index.html">
+              <img src="images/g869.png" alt="The printing shop">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-bars"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a style="text-decoration:underline;" class="nav-link js-scroll-trigger" href="privacy_NL.html"> VERTAAL <img style="height:30px;margin-left: 10px;" src="images/nl.png" alt="english"></a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div> <!-- / .container -->
+    </div>
 
 
 
@@ -508,155 +986,176 @@
   </div>
     </section>
 
-    <!--Footer _________________________________________________________________________________________________________________________________
-          _________________________________________________________________________________________________________________________________ -->
+
+      <!--Footer _________________________________________________________________________________________________________________________________
+            _________________________________________________________________________________________________________________________________ -->
 
 
+              <footer class="section " id="footer">
+                <div class="overlay footer-overlay"></div>
+                <!--Content -->
+                <div class="container">
+                  <div class="row">
+                        <!--column1 -->
+                    <div class="col-md-4 col-lg-4">
 
-                    <footer class="section " id="footer">
-                      <div class="overlay footer-overlay"></div>
-                      <!--Content -->
-                      <div class="container">
-                        <div class="row">
-                              <!--column1 -->
-                          <div class="col-md-4 col-lg-4">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-12 ">
+                          <div class="footer-widget">
+                            <!-- Brand -->
+                            <a href="#" class="footer-brand text-white">
+                              <a class="navbar-brand js-scroll-trigger" href="index2.html">
+                                <img src="images/g1037.png" alt="printing shop logo">
+                              </a>
 
-                            <div class="row">
-                              <div class="col-sm-6 col-md-12 ">
-                                <div class="footer-widget">
-                                  <!-- Brand -->
-                                  <a href="#" class="footer-brand text-white">
-                                    <a class="navbar-brand js-scroll-trigger" href="index.html">
-                                      <img src="images/g1037.png" alt="printing shop logo">
-                                    </a>
-
-                                  </a>
-                                </div>
+                            </a>
                           </div>
-                          <div class="col-sm-6 col-md-12 ">
+                    </div>
+                    <div class="col-sm-6 col-md-12 ">
 
-                              <div class="footer-widget">
+                        <div class="footer-widget">
 
-                                  <div class="contact-info-block2">
-                                    <h3 style="color: #fff;">Opening hours</h3>
-                                    <p style="color: #fff;">Mon-Fry 10:00-18:00 <br> Sat-Sun 11:00-17:00 </p>
-                                        <h3><b> <i>Open 7/7</i> </b></h3>
-                                  </div>
-
+                            <div class="contact-info-block2">
+                              <h3 style="color: #fff;">Opening hours</h3>
+                              <p style="color: #fff;">Mon-Fry 10:00-18:00 <br> Sat-Sun 11:00-17:00 </p>
+                                  <h4 style="padding-right: 100px;color:#fff">WATCH OUT: July-August closed on Sunday</h4>
 
                             </div>
 
-                                          <br><br>
-
-                                      </div>
-
-                          </div>
-                            </div>
-
-
-
-                          <!--column2 -->
-                          <div class="col-md-8 col-lg-8">
-
-                            <div class="row">
-
-                              <div class="col-sm-4 col-md-4 col-lg-4">
-                                <div class="footer-widget">
-                                    <h3>Navigation</h3>
-                                    <!-- Links -->
-                                    <ul class="footer-links ">
-
-                                      <li class="nav-item ">
-                                        <a href="index2.html" class="nav-link js-scroll-trigger">
-                                          Home
-                                        </a>
-                                      </li>
-
-
-                                    </ul>
-                                  </div>
-                                  </div>
-
-                                  <div class="col-sm-4 col-md-4 col-lg-4">
-                                    <div class="footer-widget">
-                                      <h3>Social Media</h3>
-                                      <!-- Links -->
-                                      <ul class="list-unstyled footer-links">
-                                        <li><a href="https://www.facebook.com/KoppieKopie.be"><i class="fab fa-facebook-f"></i>Facebook</a></li>
-
-                                      </ul>
-                                    </div>
-                                  </div>
-                                       <div class="col-sm-4 col-md-4 col-lg-4">
-                                         <div class="footer-widget">
-                                           <h3>Account</h3>
-                                           <!-- Links -->
-                                           <ul class="footer-links ">
-
-                                             <li>
-                                               <a href="privacy_NL.html">
-                                                 Privacy policy
-                                               </a>
-                                             </li>
-
-
-                                             <li>
-                                               <!--  <a href="faq.html">
-                                                 Veel gestelde vragen
-                                               </a> -->
-                                             </li>
-                                           </ul>
-                                         </div>
-                                  </div>
-
-
-                        </div> <!-- / .row -->
 
                       </div>
+
+                                    <br><br>
+
+                                </div>
+
+                    </div>
+                      </div>
+
+
+
+                    <!--column2 -->
+                    <div class="col-md-8 col-lg-8">
+
+                      <div class="row">
+
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                          <div class="footer-widget">
+                              <h3>Navigation</h3>
+                              <!-- Links -->
+                              <ul class="footer-links ">
+
+                                <li class="nav-item ">
+                                  <a href="index.html" class="nav-link js-scroll-trigger">
+                                    Home
+                                  </a>
+                                </li>
+
+                          
+                              </ul>
                             </div>
-                          </div>
+                            </div>
 
-                        <div class="row text-right pt-5">
-                          <div class="col-lg-12">
-                            <!-- Copyright -->
-                            <p class="footer-copy ">
-                              &copy; Copyright <span class="current-year"><a href="https://ginjo.io/">ginjo.io</a> </span> All rights reserved.
-                            </p>
-                          </div>
-                        </div> <!-- / .row -->
-                      </div> <!-- / .container -->
-                    </footer>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                              <div class="footer-widget">
+                                <h3>Social Media</h3>
+                                <!-- Links -->
+                                <ul class="list-unstyled footer-links">
+                                  <li><a href="https://www.facebook.com/KoppieKopie.be"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+
+                                </ul>
+                              </div>
+                            </div>
+                                 <div class="col-sm-4 col-md-4 col-lg-4">
+                                   <div class="footer-widget">
+                                     <h3>Account</h3>
+                                     <!-- Links -->
+                                     <ul class="footer-links ">
+
+                                       <li>
+                                         <a href="privacy_NL.html">
+                                           Privacy policy
+                                         </a>
+                                       </li>
 
 
-    <!--  Page Scroll to Top  -->
+                                       <li>
+                                         <!--  <a href="faq.html">
+                                           Veel gestelde vragen
+                                         </a> -->
+                                       </li>
+                                     </ul>
+                                   </div>
+                            </div>
 
-    <a class="scroll-to-top js-scroll-trigger" href="#page-top">
+
+                  </div> <!-- / .row -->
+
+                </div>
+                      </div>
+                    </div>
+
+                  <div class="row text-right pt-5">
+                    <div class="col-lg-12">
+                      <!-- Copyright -->
+                      <p class="footer-copy ">
+                        &copy; Copyright <span class="current-year"><a href="https://ginjo.io/">ginjo.io</a> </span> All rights reserved.
+                      </p>
+                    </div>
+                  </div> <!-- / .row -->
+                </div> <!-- / .container -->
+              </footer>
+
+
+
+      <!--  Page Scroll to Top  -->
+
+      <a class="scroll-to-top js-scroll-trigger hover" href="#page-top">
         <i class="fa fa-angle-up"></i>
-    </a>
+      </a>
+
+      <!-- Main jQuery -->
+      <script src="plugins/jquery/jquery.min.js"></script>
+      <!-- Bootstrap 3.1 -->
+      <script src="plugins/bootstrap/js/popper.min.js"></script>
+      <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+      <!-- Slick Slider -->
+      <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <!-- Map Js -->
+      <script src="plugins/google-map/gmap3.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoep2bcNfMNzVS8cKyx04yoWvtqdnsBxg&callback=initMap"></script>
+
+      <script src="js/form/contact.js"></script>
+      <script src="js/theme.js"></script>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom JavaScript for this theme -->
+      <script src="js/scrolling-nav.js"></script>
 
 
 
+      <!-- Custom hamburger close on click -->
+      <script>
+        $(document).on('click', function() {
+          $('.collapse').collapse('hide');
+        })
+      </script>
+
+      <!-- cookies modal -->
+      <script>
+        $(document).ready(function() {
+          $('#modalCookie1').modal('show');
+        });
+      </script>
 
 
-    <!--
-    Essential Scripts
-    =====================================-->
+    </body>
 
-
-    <!-- Main jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 3.1 -->
-    <script src="plugins/bootstrap/js/popper.min.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Map Js -->
-    <script src="plugins/google-map/gmap3.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
-
-    <script src="js/form/contact.js"></script>
-    <script src="js/theme.js"></script>
-
-  </body>
-  </html>
+    </html>
