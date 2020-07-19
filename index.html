@@ -1522,24 +1522,145 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     </div>
   </section>
 
+<br><br>
+
   <section class="section" id="contact">
     <div class="container">
       <div class="row mb-4">
-        <div class="col-sm-12 col-md-6 col-lg-6 ">
-          <h5></h5>
-          <!-- Heading -->
-          <h2 class="section-title mb-2 ">
-            Offerte? <span class="font-weight-normal"></span>
-          </h2>
+        <div class="col-sm-12 col-md-8 col-lg-8">
 
-          <!-- Subheading -->
-          <p class="mb-5 ">
-            Vul onderstaand formulier in om een offerte aan te vragen.
-          </p>
+<div class="row">
+  <div class="col-md-12">
+    <h5></h5>
+    <!-- Heading -->
+    <h2 class="section-title mb-2 ">
+      Offerte? <span class="font-weight-normal"></span>
+    </h2>
 
+    <!-- Subheading -->
+    <p class="mb-5 ">
+      Vul onderstaand formulier in om een offerte aan te vragen.
+    </p>
+
+  </div>
+
+  <div class="col-md-12">
+    <div class="col-lg-6">
+      <!-- form message -->
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-success contact__msg" style="display: none" role="alert">
+            Uw boodschap is succesvol verzonden.
+          </div>
+        </div>
+      </div>
+      <!-- end message -->
+      <!-- Contacts Form -->
+      <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
+        <div class="row">
+          <!-- Input -->
+          <div class="col-sm-6 mb-6">
+            <div class="form-group">
+              <label class="h6 small d-block text-uppercase">
+                Naam
+                <span class="text-danger">*</span>
+              </label>
+
+              <div class="input-group">
+                <input class="form-control" name="name" id="name" required="" placeholder="John Doe" type="text">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <!-- Input -->
+          <div class="col-sm-6 mb-6">
+            <div class="form-group">
+              <label class="h6 small d-block text-uppercase">
+                E-mail
+                <span class="text-danger">*</span>
+              </label>
+
+              <div class="input-group ">
+                <input class="form-control" name="email" id="email" required="" placeholder="john@gmail.com" type="email">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <div class="w-100"></div>
+
+          <!-- Input -->
+          <div class="col-sm-6 mb-6">
+            <div class="form-group">
+              <label class="h6 small d-block text-uppercase">
+                Onderwerp
+                <span class="text-danger">*</span>
+              </label>
+
+              <div class="input-group">
+                <input class="form-control" name="subject" id="subject" required="" placeholder="Dubbel zijdig A3" type="text">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <!-- Input -->
+          <div class="col-sm-6 mb-6">
+            <div class="form-group">
+              <label class="h6 small d-block text-uppercase">
+                Telefoon nummer
+                <span class="text-danger">*</span>
+              </label>
+
+              <div class="input-group ">
+                <input class="form-control" id="phone" name="phone" required="" placeholder="04xx xxx xxx" type="text">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
         </div>
 
-        <div class="col-sm-12  col-md-6 col-lg-6">
+        <!-- Input -->
+        <div class="form-group mb-5">
+          <label class="h6 small d-block text-uppercase">
+            Hoe kunnen we u helpen?
+            <span class="text-danger">*</span>
+          </label>
+
+          <div class="input-group">
+            <textarea class="form-control" rows="4" name="message" id="message" required="" placeholder="Hallo, ik had graag..."></textarea>
+          </div>
+        </div>
+        <!-- End Input -->
+
+        <div class="row">
+          <div class="col-6">
+
+            <div class="">
+              <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
+
+              <p class="small pt-3">We antwoorden terug binnen de 24 uur.</p>
+            </div>
+          </div>
+
+        </div>
+      </form>
+      <!-- End Contacts Form -->
+    </div>
+
+  </div>
+
+
+</div>
+
+</div>
+
+
+
+        <div class="col-sm-12  col-md-4 col-lg-4">
+
+
 
           <h2 style="padding-top: 10px;" class="section-title mb-2 ">
             Bestand verzenden? <span class="font-weight-normal"></span>
@@ -1599,111 +1720,6 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
           <br>
         </div>
       </div> <!-- / .row -->
-
-      <div class="row">
-        <div class="col-lg-6">
-          <!-- form message -->
-          <div class="row">
-            <div class="col-12">
-              <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                Uw boodschap is succesvol verzonden.
-              </div>
-            </div>
-          </div>
-          <!-- end message -->
-          <!-- Contacts Form -->
-          <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
-            <div class="row">
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    Naam
-                    <span class="text-danger">*</span>
-                  </label>
-
-                  <div class="input-group">
-                    <input class="form-control" name="name" id="name" required="" placeholder="John Doe" type="text">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    E-mail
-                    <span class="text-danger">*</span>
-                  </label>
-
-                  <div class="input-group ">
-                    <input class="form-control" name="email" id="email" required="" placeholder="john@gmail.com" type="email">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-
-              <div class="w-100"></div>
-
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    Onderwerp
-                    <span class="text-danger">*</span>
-                  </label>
-
-                  <div class="input-group">
-                    <input class="form-control" name="subject" id="subject" required="" placeholder="Dubbel zijdig A3" type="text">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    Telefoon nummer
-                    <span class="text-danger">*</span>
-                  </label>
-
-                  <div class="input-group ">
-                    <input class="form-control" id="phone" name="phone" required="" placeholder="04xx xxx xxx" type="text">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-            </div>
-
-            <!-- Input -->
-            <div class="form-group mb-5">
-              <label class="h6 small d-block text-uppercase">
-                Hoe kunnen we u helpen?
-                <span class="text-danger">*</span>
-              </label>
-
-              <div class="input-group">
-                <textarea class="form-control" rows="4" name="message" id="message" required="" placeholder="Hallo, ik had graag..."></textarea>
-              </div>
-            </div>
-            <!-- End Input -->
-
-            <div class="row">
-              <div class="col-6">
-
-                <div class="">
-                  <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
-
-                  <p class="small pt-3">We antwoorden terug binnen de 24 uur.</p>
-                </div>
-              </div>
-
-            </div>
-          </form>
-          <!-- End Contacts Form -->
-        </div>
 
         <!-- END MAP   <div style="padding-top: 23px;" class="col-lg-6 col-md-6">
                START MAP

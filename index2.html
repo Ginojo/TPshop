@@ -1494,194 +1494,214 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     </div>
     </div>
   </section>
+<br><br>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-sm-12 col-md-8 col-lg-8">
 
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-md-6 col-lg-6">
-          <h5></h5>
-          <!-- Heading -->
-          <h2 class="section-title mb-2">
-            Quotation? <span class="font-weight-normal"> </span>
-          </h2>
+  <div class="row">
+    <div class="col-md-12">
+      <h5></h5>
+      <!-- Heading -->
+      <h2 class="section-title mb-2 ">
+        Quote? <span class="font-weight-normal"></span>
+      </h2>
 
-          <!-- Subheading -->
-          <p class="mb-5">
-            Fill in the form below to request a quote.
-          </p>
+      <!-- Subheading -->
+      <p class="mb-5 ">
+        Fill in the form here below to request a quote.
+      </p>
 
+    </div>
+
+    <div class="col-md-12">
+      <div class="col-lg-6">
+        <!-- form message -->
+        <div class="row">
+          <div class="col-12">
+            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+              Your message has been send.
+            </div>
+          </div>
         </div>
+        <!-- end message -->
+        <!-- Contacts Form -->
+        <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
+          <div class="row">
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="form-group">
+                <label class="h6 small d-block text-uppercase">
+                  Name
+                  <span class="text-danger">*</span>
+                </label>
 
-        <div class="col-md-6 col-lg-6">
+                <div class="input-group">
+                  <input class="form-control" name="name" id="name" required="" placeholder="John Doe" type="text">
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
 
-          <h2 style="padding top: 10px;" class="section-title mb-2">
-            To order? <span class="font-weight-normal"> </span>
-          </h2>
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="form-group">
+                <label class="h6 small d-block text-uppercase">
+                  E-mail
+                  <span class="text-danger">*</span>
+                </label>
 
-          <p class="mb-5">
-            Send your file via our order portal.
-          </p>
+                <div class="input-group ">
+                  <input class="form-control" name="email" id="email" required="" placeholder="john@gmail.com" type="email">
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <div class="w-100"></div>
+
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="form-group">
+                <label class="h6 small d-block text-uppercase">
+                  Subject
+                  <span class="text-danger">*</span>
+                </label>
+
+                <div class="input-group">
+                  <input class="form-control" name="subject" id="subject" required="" placeholder="Dubbel zijdig A3" type="text">
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="form-group">
+                <label class="h6 small d-block text-uppercase">
+                  Phone
+                  <span class="text-danger">*</span>
+                </label>
+
+                <div class="input-group ">
+                  <input class="form-control" id="phone" name="phone" required="" placeholder="04xx xxx xxx" type="text">
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+          </div>
+
+          <!-- Input -->
+          <div class="form-group mb-5">
+            <label class="h6 small d-block text-uppercase">
+              How can we help you?
+              <span class="text-danger">*</span>
+            </label>
+
+            <div class="input-group">
+              <textarea class="form-control" rows="4" name="message" id="message" required="" placeholder="Hallo, ik had graag..."></textarea>
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <div class="row">
+            <div class="col-6">
+
+              <div class="">
+                <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
+
+                <p class="small pt-3">We reply within 24 hours.</p>
+              </div>
+            </div>
+
+          </div>
+        </form>
+        <!-- End Contacts Form -->
+      </div>
+
+    </div>
 
 
-                                    <!--- model start-->
-                                    <p style="margin-top:50px; color:#FFF;" class="mb-0">
-                                      <a target="_blank" data-toggle="modal" data-target="#myModal"  class="btn btn-primary ">
-                                        Read instructions
-                                      </a>
-                                    </p>
+  </div>
+
+  </div>
 
 
-                                    <div class="modal fade show" id="myModal" tabindex="-1" role="dialog">
-                                      <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                          <div class="modal-header">
-                                            <h5 class="modal-title">Instructions</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            </button>
+
+          <div class="col-sm-12  col-md-4 col-lg-4">
 
 
-                                          </div>
-                                          <div class="modal-body">
 
-                                              <p>    - Send only in PDF format. <br>
+            <h2 style="padding-top: 10px;" class="section-title mb-2 ">
+              Send a file? <span class="font-weight-normal"></span>
+            </h2>
+
+
+                          <!-- Subheading -->
+                          <p class="lead mb-5">
+                            Send your file via our order portal
+                          </p>
+
+
+
+                                      <!--- model start-->
+
+                                                  <p style="margin-top:50px; color:#FFF;" class="mb-0">
+                                                    <a target="_blank" data-toggle="modal" data-target="#myModal"  class="btn btn-primary">
+                                                      Read instructions
+                                                    </a>
+                                                  </p>
+
+                                      <div class="modal fade show" id="myModal" tabindex="-1" role="dialog">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title">Instructions</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              </button>
+
+
+                                            </div>
+                                            <div class="modal-body">
+
+
+                                              <p>  - Send only in PDF format. <br>
                                                  - Collect all files in one folder. <br>
 
                                                       - Display clearly: color or black and white. <br>
                                                       - Display clearly: single or double sided. <br>
                                                       - Clearly indicate: the number of pages and format. <br>
                                                       - You will receive a confirmation when the print is ready.  </p>
-                                          </div>
-                                          <div class="modal-footer">
+                                            </div>
+                                            <div class="modal-footer">
 
-                                            <button style="color:#fff;" type="button" class="btn btn-primary hover" data-dismiss="modal">Close</button>
+                                              <button style="color:#fff;" type="button" class="btn btn-primary hover" data-dismiss="modal">Close</button>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
-                                    </div>
 
-                                    <!--- model end -->
+                                      <!--- model end -->
 
-          <p style="margin-top:50px;" class="mb-0">
-            <a href="https://theprintingshop.wetransfer.com/" target="_blank" class="btn btn-primary ">
-              Place an order
-            </a>
-          </p>
 
-          <br>
-        </div>
-      </div>
+            <p style="margin-top: 50px;" class="mb-0">
+              <a href="https://theprintingshop.wetransfer.com/" target="_blank" class="btn btn-primary ">
+                Send file
+              </a>
+            </p>
 
-      <div class="row">
-        <div class="col-lg-6">
-
-          <div class="row">
-            <div class="col-12">
-              <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                Your message has been sent successfully.
-              </div>
-            </div>
+            <br>
           </div>
-          <!-- end message -->
-          <!-- Contacts Form -->
-          <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
-            <div class="row">
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    Name
-                    <span class="text-danger">*</span>
-                  </label>
+        </div> <!-- / .row -->
 
-                  <div class="input-group">
-                    <input class="form-control" name="name" id="name" required="" placeholder="John Doe" type="text">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    E-mail
-                    <span class="text-danger">*</span>
-                  </label>
-
-                  <div class="input-group ">
-                    <input class="form-control" name="email" id="email" required="" placeholder="john@gmail.com" type="email">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-
-              <div class="w-100"></div>
-
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    Subject
-                    <span class="text-danger">*</span>
-                  </label>
-
-                  <div class="input-group">
-                    <input class="form-control" name="subject" id="subject" required="" placeholder="Double sided A3" type="text">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-
-              <!-- Input -->
-              <div class="col-sm-6 mb-6">
-                <div class="form-group">
-                  <label class="h6 small d-block text-uppercase">
-                    Phone
-                    <span class="text-danger">*</span>
-                  </label>
-
-                  <div class="input-group ">
-                    <input class="form-control" id="phone" name="phone" required="" placeholder="04xx xxx xxx" type="text">
-                  </div>
-                </div>
-              </div>
-              <!-- End Input -->
-            </div>
-
-            <!-- Input -->
-            <div class="form-group mb-5">
-              <label class="h6 small d-block text-uppercase">
-                How can we help you?
-                <span class="text-danger">*</span>
-              </label>
-
-              <div class="input-group">
-                <textarea class="form-control" rows="4" name="message" id="message" required="" placeholder="Hi, is it possible..."></textarea>
-              </div>
-            </div>
-            <!-- End Input -->
-
-            <div class="row">
-              <div class="col-6">
-
-                <div class="">
-                  <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
-
-                  <p class="small pt-3">We reply within 24hours.</p>
-                </div>
-              </div>
-
-            </div>
-          </form>
-          <!-- End Contacts Form -->
+          <!-- END MAP   <div style="padding-top: 23px;" class="col-lg-6 col-md-6">
+                 START MAP
+                <div id="map"></div> -->
         </div>
-        <!-- END MAP   <div style="padding-top: 23px;" class="col-lg-6 col-md-6">
-             START MAP
-            <div id="map"></div> -->
       </div>
-    </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
 
   <div class="container">
