@@ -826,7 +826,7 @@ margin-top: -120px;
 }
 
 .banner-contact-form {
-  padding: 45px 40px;
+  padding: ;
   margin-top: 30px;
 }
 
@@ -1922,7 +1922,7 @@ CONTACT PAGE
 /* Custom, iPhone Retina */
 @media (max-width: 480px) {
   .bg-light {
-    background: transparent !important;
+    background:;
   }
   .main-navigation {
     margin-top: 40px;

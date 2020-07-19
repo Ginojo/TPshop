@@ -106,7 +106,7 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     }
 
     .card-body h2 {
-      color: #fff;
+      color: #000;
     }
 
     .card-body h3 {
@@ -579,6 +579,10 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
         color: #eb252eff;
       }
 
+      .card1 {
+      margin-top: 50px;
+      }
+
       #footer img {
         vertical-align: middle;
         border-style: none;
@@ -688,12 +692,19 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
         margin-top: 250px;
       }
+
+      .card1 {
+      margin-top: 50px;
+      }
     }
 
     #service p {
       font-size: 17px;
       padding-right: 50px;
     }
+
+
+
     }
 
 
@@ -996,7 +1007,10 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
       <div class="row  align-items-center justify-content-center">
         <div class="col-md-12 col-lg-8">
+
           <div class="banner-content text-lg-left">
+
+
             <!-- Heading -->
             <h1 class="display-4 mb-4 ">
               Snel en kwalitatief drukwerk
@@ -1057,26 +1071,45 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
           </div>
         </div>
 
+
         <div class="col-lg-4 ">
-          <div class="banner-contact-form bg-white">
-            <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
-              <div class="form-group">
-                <input type="text" name="name" id="name" class="form-control" placeholder="Naam">
-              </div>
-              <div class="form-group">
-                <input type="text" name="email" id="email" class="form-control" placeholder="E-mail">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Onderwerp">
-              </div>
-              <div class="form-group">
-                <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Vraag?"></textarea>
-              </div>
 
-              <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
 
-            </form>
-          </div>
+                  <div class="card bg-light">
+                    <div class="card-body">
+
+                      <h2 class=" mb-2 ">
+                         Stel een vraag <span class="font-weight-normal"></span>
+                      </h2>
+
+                      <!-- Subheading -->
+                      <p class="mb-5 ">
+                        We antwoorden binnen enkele uren terug.
+                      </p>
+                      <div class="banner-contact-form">
+                        <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
+                          <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Naam">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="E-mail">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Onderwerp">
+                          </div>
+                          <div class="form-group">
+                            <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Vraag?"></textarea>
+                          </div>
+
+                          <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+
+
         </div>
       </div> <!-- / .row -->
     </div> <!-- / .container -->
@@ -1522,135 +1555,144 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
     </div>
   </section>
 
-<br><br>
+
 
   <section class="section" id="contact">
     <div class="container">
       <div class="row mb-4">
-        <div class="col-sm-12 col-md-8 col-lg-8">
+        <div class="col-sm-12 col-md-7 col-lg-7">
 
 <div class="row">
   <div class="col-md-12">
-    <h5></h5>
-    <!-- Heading -->
-    <h2 class="section-title mb-2 ">
-      Offerte? <span class="font-weight-normal"></span>
-    </h2>
 
-    <!-- Subheading -->
-    <p class="mb-5 ">
-      Vul onderstaand formulier in om een offerte aan te vragen.
-    </p>
 
-  </div>
 
-  <div class="col-md-12">
-    <div class="col-lg-6">
-      <!-- form message -->
-      <div class="row">
-        <div class="col-12">
-          <div class="alert alert-success contact__msg" style="display: none" role="alert">
-            Uw boodschap is succesvol verzonden.
-          </div>
-        </div>
+    <div class="card bg-light">
+      <div class="card-body">
+
+        <h5></h5>
+        <!-- Heading -->
+        <h2 class="section-title mb-2 ">
+          Offerte? <span class="font-weight-normal"></span>
+        </h2>
+
+        <!-- Subheading -->
+        <p class="mb-5 ">
+          Vul onderstaand formulier in om een offerte aan te vragen.
+        </p>
+
       </div>
-      <!-- end message -->
-      <!-- Contacts Form -->
-      <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
-        <div class="row">
-          <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="form-group">
+
+      <div class="col-md-12">
+        <div class="col-lg-12">
+          <!-- form message -->
+          <div class="row">
+            <div class="col-12">
+              <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                Uw boodschap is succesvol verzonden.
+              </div>
+            </div>
+          </div>
+          <!-- end message -->
+          <!-- Contacts Form -->
+          <form action="https://formspree.io/xgenvvjn" method="POST" class="contact_form">
+            <div class="row">
+              <!-- Input -->
+              <div class=" col-md-6 col-lg-6 mb-6">
+                <div class="form-group">
+                  <label class="h6 small d-block text-uppercase">
+                    Naam
+                    <span class="text-danger">*</span>
+                  </label>
+
+                  <div class="input-group">
+                    <input class="form-control" name="name" id="name" required="" placeholder="John Doe" type="text">
+                  </div>
+                </div>
+              </div>
+              <!-- End Input -->
+
+              <!-- Input -->
+              <div class=" col-md-6 col-lg-6 mb-6">
+                <div class="form-group">
+                  <label class="h6 small d-block text-uppercase">
+                    E-mail
+                    <span class="text-danger">*</span>
+                  </label>
+
+                  <div class="input-group ">
+                    <input class="form-control" name="email" id="email" required="" placeholder="john@gmail.com" type="email">
+                  </div>
+                </div>
+              </div>
+              <!-- End Input -->
+
+              <div class="w-100"></div>
+
+              <!-- Input -->
+              <div class=" col-md-6 col-lg-6 mb-6">
+                <div class="form-group">
+                  <label class="h6 small d-block text-uppercase">
+                    Onderwerp
+                    <span class="text-danger">*</span>
+                  </label>
+
+                  <div class="input-group">
+                    <input class="form-control" name="subject" id="subject" required="" placeholder="Dubbel zijdig A3" type="text">
+                  </div>
+                </div>
+              </div>
+              <!-- End Input -->
+
+              <!-- Input -->
+              <div class=" col-md-6 col-lg-6 mb-6">
+                <div class="form-group">
+                  <label class="h6 small d-block text-uppercase">
+                    Telefoon nummer
+                    <span class="text-danger">*</span>
+                  </label>
+
+                  <div class="input-group ">
+                    <input class="form-control" id="phone" name="phone" required="" placeholder="04xx xxx xxx" type="text">
+                  </div>
+                </div>
+              </div>
+              <!-- End Input -->
+            </div>
+
+            <!-- Input -->
+            <div class="form-group mb-5">
               <label class="h6 small d-block text-uppercase">
-                Naam
+                Hoe kunnen we u helpen?
                 <span class="text-danger">*</span>
               </label>
 
               <div class="input-group">
-                <input class="form-control" name="name" id="name" required="" placeholder="John Doe" type="text">
+                <textarea class="form-control" rows="4" name="message" id="message" required="" placeholder="Hallo, ik had graag..."></textarea>
               </div>
             </div>
-          </div>
-          <!-- End Input -->
+            <!-- End Input -->
 
-          <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="form-group">
-              <label class="h6 small d-block text-uppercase">
-                E-mail
-                <span class="text-danger">*</span>
-              </label>
+            <div class="row">
+              <div class="col-6">
 
-              <div class="input-group ">
-                <input class="form-control" name="email" id="email" required="" placeholder="john@gmail.com" type="email">
+                <div class="">
+                  <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
+
+                  <p class="small pt-3">We antwoorden terug binnen de 24 uur.</p>
+                </div>
               </div>
+
             </div>
-          </div>
-          <!-- End Input -->
-
-          <div class="w-100"></div>
-
-          <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="form-group">
-              <label class="h6 small d-block text-uppercase">
-                Onderwerp
-                <span class="text-danger">*</span>
-              </label>
-
-              <div class="input-group">
-                <input class="form-control" name="subject" id="subject" required="" placeholder="Dubbel zijdig A3" type="text">
-              </div>
-            </div>
-          </div>
-          <!-- End Input -->
-
-          <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="form-group">
-              <label class="h6 small d-block text-uppercase">
-                Telefoon nummer
-                <span class="text-danger">*</span>
-              </label>
-
-              <div class="input-group ">
-                <input class="form-control" id="phone" name="phone" required="" placeholder="04xx xxx xxx" type="text">
-              </div>
-            </div>
-          </div>
-          <!-- End Input -->
+          </form>
+          <!-- End Contacts Form -->
         </div>
 
-        <!-- Input -->
-        <div class="form-group mb-5">
-          <label class="h6 small d-block text-uppercase">
-            Hoe kunnen we u helpen?
-            <span class="text-danger">*</span>
-          </label>
+      </div>
 
-          <div class="input-group">
-            <textarea class="form-control" rows="4" name="message" id="message" required="" placeholder="Hallo, ik had graag..."></textarea>
-          </div>
-        </div>
-        <!-- End Input -->
-
-        <div class="row">
-          <div class="col-6">
-
-            <div class="">
-              <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Bericht Verzenden">
-
-              <p class="small pt-3">We antwoorden terug binnen de 24 uur.</p>
-            </div>
-          </div>
-
-        </div>
-      </form>
-      <!-- End Contacts Form -->
+      </div>
     </div>
 
-  </div>
-
 
 </div>
 
@@ -1658,8 +1700,11 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
 
 
-        <div class="col-sm-12  col-md-4 col-lg-4">
 
+        <div class="col-sm-12  col-md-4 col-lg-4" >
+
+          <div class="card card1">
+            <div class="card-body">
 
 
           <h2 style="padding-top: 10px;" class="section-title mb-2 ">
@@ -1725,7 +1770,10 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
                START MAP
               <div id="map"></div> -->
       </div>
+      </div>
     </div>
+  </div>
+</div>
     </div>
   </section>
 
