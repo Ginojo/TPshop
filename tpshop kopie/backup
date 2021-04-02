@@ -1,0 +1,199 @@
+<section id="landing">
+  <div class="container">
+
+  </div>
+</section>
+
+
+<div class="row" id="intro">
+  <div style="margin-bottom: 100px;" class="col-12 text-center">
+
+    <h1>GESPECIALISEERD IN SNEL EN KWALITATIEF DRUKWERK</h1>
+
+  </div>
+
+  <br> <br>
+
+  <div class="col-lg-4 col-md-5 col-sm-7 col-xs-12">
+    <div class="contact-info-block4">
+      <h4 style="color:#fff;"><b>
+          <img style="width:3%;" src="images/dot.png" alt=""> Drukwerk op maat. <br>
+          <img style="width:3%;" src="images/dot.png" alt=""> 70 tot 400 gram dikte. <br>
+          <img style="width:3%;" src="images/dot.png" alt=""> Gekleurd of zwart/wit. <br>
+          <img style="width:3%;" src="images/dot.png" alt=""> Enkel of dubbelzijdig.
+
+        </b></h4>
+    </div>
+
+  </div>
+
+  <div class="">
+
+  </div>
+
+  <div class="col-lg-8 col-md-7 col-sm-5 col-xs-12">
+    <div>
+      <h4> <a style="" href="#">Kies</a> uit ons rijk aanbod aan papiersoorten. <br><br> De zelfde dag klaar. Vraag naar onze voorwaarden.
+      </h4>
+    </div>
+
+  </div>
+</div>
+<br>
+<hr>
+
+
+<div class="top-info-block d-inline-flex">
+  <div class="icon-block">
+    <i class="ti-mobile"></i>
+  </div>
+  <div class="info-block">
+    <h5 class="font-weight-500">+32 (0) 483 069 172</h5>
+    <p>Telefoon / Whatsapp</p>
+  </div>
+</div>
+
+<div class="top-info-block d-inline-flex">
+  <div class="icon-block">
+    <i class="ti-email"></i>
+  </div>
+  <div class="info-block">
+    <h5 class="font-weight-500">info@tpshop.be</h5>
+    <p>E-mail</p>
+  </div>
+</div>
+<div class="top-info-block d-inline-flex">
+  <div class="icon-block">
+    <i class="ti-time"></i>
+  </div>
+  <div class="info-block">
+    <h5 class="font-weight-500">Ma-Vr 10:00-18:00 <br> Za-Zo 11:00-17:00 </h5>
+    <p style="padding-right: 90px;"><b>LET OP:</b> Juli-Augustus gesloten op zondag</p>
+  </div>
+
+
+
+
+
+  -------------------
+
+
+
+
+
+      @media only screen and (max-width: 320px) {
+      #student {
+          background: url("../images/1107.jpg") center;
+          width: 100%;
+          margin: 0;
+          background-size: auto;
+          position: relative;
+          padding-top: 40px;
+      }
+
+
+      .contact-info-block3 {
+          padding: 40px 20px;
+          border-radius: 20px;
+          margin: auto;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          background-color: rgba(235, 36, 45, 0.6);
+      }
+
+      .contact-info-block6 {
+          padding: 20px 20px;
+          border-radius: 1px;
+          margin: auto;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          background-color: rgba(223, 128, 133, 0.8);
+          width: 100%
+      }
+
+      .contact-info-block6 p {
+          font-weight: 500;
+      }
+
+      #student .block {
+        color: #fff;
+      }
+
+
+      #student .block h4 {
+        font-family: 'Alfa Slab One', sans-serif !important;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 60px;
+        letter-spacing: 10px;
+        color: #fff;
+      }
+
+      #student .block h3 {
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 60px;
+        letter-spacing: 5px;
+        text-align: center;
+        color: #fff;
+      }
+
+      #student .block h2 {
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 60px;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #fff;
+      }
+
+      }
+      @media only screen and (max-width: 375px) and (min-width: 320px){
+      #student {
+          background: url("../images/1107.jpg") center;
+          width: 100%;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          background-size: auto;
+          position: relative;
+      }
+      }
+      @media only screen and (max-width: 425px) and (min-width: 375px){
+      #student {
+        background: url("../images/1107.jpg") center;
+          width: 100%;
+          margin: 0;
+          background-size: auto;
+          position: relative;
+          padding-top: 40px;
+      }
+      }
+
+
+      -----------
+
+
+
+                  <br> <br>
+                  <div style="margin-right:50px;" class="card">
+
+                    <header class="card-header">
+                      <a href="#" data-toggle="collapse" data-target="#collapse22" aria-expanded="true" class="">
+
+                        <span class="title">Lees Instructies</span>
+                      </a>
+                    </header>
+
+                    <div class="panel-collapse  collapse show" id="collapse22" style="">
+                      <article class="card-body">
+
+                        - Maak eerst en vooral een gratis account aan bij wetransfer. <br>
+                        - Stuur enkel PDF formaat, deze bied de beste kleur kwaliteit. <br>
+                        - Geef duidelijk weer: kleur of zwart/wit. <br>
+                        - Geef duidelijk weer: enkel of dubbelzijdig. <br>
+                        - Geef duidelijk het formaat weer. Vraag naar onze voorwaarden.
+                      </article> <!-- card-body.// -->
+                    </div> <!-- collapse .// -->
+
+
+                  </div> <!-- card.// -->
