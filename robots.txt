@@ -1,0 +1,18 @@
+# robots.txt for The Printing Shop (tpshop.be)
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Disallow crawling of certain directories
+Disallow: /vendor/
+Disallow: /plugins/
+Disallow: /js/
+Disallow: /css/
+
+# Allow important CSS files for mobile-first indexing
+Allow: /css/style.css
+Allow: /css/custom-inline.css
+
+# Sitemap location
+Sitemap: https://tpshop.be/sitemap.xml
