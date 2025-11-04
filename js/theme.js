@@ -62,7 +62,7 @@
             var mapOptions = {
               zoom: 15,
               scrollwheel: false,
-              center: new google.maps.LatLng(40.7127837, -74.00594130000002)
+              center: new google.maps.LatLng(51.2194, 4.4025)
             };
             var map = new google.maps.Map(document.getElementById('map'),
                 mapOptions);
@@ -72,7 +72,7 @@
               map: map
             });
           }
-          google.maps.event.addDomListener(window, 'load', initialize);	
+          google.maps.event.addDomListener(window, 'load', initialize);
           /*END GOOGLE MAP*/	
 
  
