@@ -754,9 +754,56 @@ color: #fff;
 
 /* Speed up Bootstrap collapse animation for student card */
 .collapsing {
-  transition: height 0.25s ease !important;
+  transition: height 0.1s ease !important;
 }
 
 .collapse {
-  transition: height 0.25s ease !important;
+  transition: height 0.1s ease !important;
+}
+
+/* Optimized contact section styling */
+#contacttop .row {
+  align-items: flex-start;
+}
+
+.top-info-block {
+  align-items: flex-start;
+}
+
+.top-info-block .icon-block {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+}
+
+.top-info-block .icon-block i {
+  font-size: 40px;
+  line-height: 1;
+  display: block;
+}
+
+.top-info-block .info-block {
+  padding-top: 10px;
+}
+
+.top-info-block .info-block h5 {
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.top-info-block .info-block p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Hours label styling */
+.hours-label {
+  color: #eb252eff;
+  font-weight: 700;
 }

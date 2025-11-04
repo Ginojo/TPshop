@@ -55,10 +55,8 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://maps.googleapis.com">
   <link rel="preconnect" href="https://www.facebook.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://maps.googleapis.com">
 
   <!-- Schema.org Structured Data for LocalBusiness -->
   <script type="application/ld+json">
@@ -241,8 +239,8 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
                 <div class="icon-block">
                   <i class="ti-mobile"></i>
                 </div>
-                <div style="margin-right: 60px;" class="info-block">
-                  <h5 style="margin-right: -30px; "  class="font-weight-500">+32483069172</h5>
+                <div class="info-block">
+                  <h5 class="font-weight-500">+32483069172</h5>
                   <p>Mobiel</p>
                 </div>
               </div>
@@ -252,20 +250,18 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
                 <div class="icon-block">
                   <i class="ti-email"></i>
                 </div>
-                <div  class="info-block">
+                <div class="info-block">
                   <h5 class="font-weight-500">info@tpshop.be</h5>
-
                 </div>
               </div>
             </div>
             <div class="top col-md-4 col-lg-4">
               <div class="top-info-block d-inline-flex">
-                <div style="margin-left: -30px; " class="icon-block">
+                <div class="icon-block">
                   <i class="ti-time"></i>
                 </div>
-                <div class="info-block">
-                  <h5 class="font-weight-500"> <b style="color: #eb252eff; ">Opensingsuren</b> <br> Ma-Vr 10:00-17:00 <br> Za-Zo Gesloten </h5>
-                  <p><b></b> </p>
+                <div class="info-block info-block-hours">
+                  <h5 class="font-weight-500"><span class="hours-label">Opensingsuren</span><br>Ma-Vr 10:00-17:00<br>Za-Zo Gesloten</h5>
                 </div>
               </div>
             </div>
@@ -1299,9 +1295,9 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
   <!-- Slick Slider -->
   <script src="plugins/slick-carousel/slick/slick.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
-  <!-- Map Js -->
-  <script src="plugins/google-map/gmap3.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoep2bcNfMNzVS8cKyx04yoWvtqdnsBxg&callback=initMap"></script>
+  <!-- Map Js - DISABLED FOR PERFORMANCE (map not in use) -->
+  <!-- <script src="plugins/google-map/gmap3.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoep2bcNfMNzVS8cKyx04yoWvtqdnsBxg&callback=initMap"></script> -->
 
   <script src="js/form/contact.js"></script>
   <script src="js/theme.js"></script>
@@ -1327,9 +1323,8 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
 
   <!-- card collapse on hover -->
 
-
-
-  <script>
+  <!-- REMOVED: Broken JavaScript trying to click non-existent btnLogin element -->
+  <!-- <script>
     $(document).ready(function() {
       $('body').bootstrapMaterialDesign();
       document.getElementById("btnLogin").click();
@@ -1338,7 +1333,7 @@ Printing, Flyers, Folders, Express printing, Business cards, Brochures, Magazine
       }, 2000);
 
     });
-  </script>
+  </script> -->
 
 
 
