@@ -1,6 +1,6 @@
 // Instagram Feed Loader for The Printing Shop Antwerpen
-// Displays 6 recent Instagram posts in a grid format
-// TO UPDATE: Replace the post URLs below with your latest Instagram post links
+// Displays 6 recent Instagram-style posts in a grid format
+// TO UPDATE: Add images to images/instagram/ folder and update INSTAGRAM_POSTS array below
 
 (function() {
   'use strict';
@@ -8,80 +8,69 @@
   const INSTAGRAM_USERNAME = 'theprintingshopantwerpen';
   const INSTAGRAM_URL = 'https://www.instagram.com/' + INSTAGRAM_USERNAME + '/';
 
-  // EASY UPDATE: Add your 6 most recent Instagram post URLs here
-  // Just copy the URL from any Instagram post (e.g., https://www.instagram.com/p/ABC123/)
+  // EASY UPDATE: Add your 6 most recent Instagram posts here
+  // image: path to image file (place images in images/instagram/ folder)
+  // link: Instagram post URL (so users can click through to see the full post)
   const INSTAGRAM_POSTS = [
-    'https://www.instagram.com/p/DDGr50tM9fN/',  // Post 1
-    'https://www.instagram.com/p/DCCVQRBMe56/',  // Post 2
-    'https://www.instagram.com/p/DBwWZlmMxIu/',  // Post 3
-    'https://www.instagram.com/p/DBuEE18sPPD/',  // Post 4
-    'https://www.instagram.com/p/DBjzEQTsH8L/',  // Post 5
-    'https://www.instagram.com/p/DBVu2kfsWQu/'   // Post 6
+    {
+      image: 'images/p18.jpg',
+      link: 'https://www.instagram.com/p/DDGr50tM9fN/',
+      alt: 'Recent drukwerk project 1'
+    },
+    {
+      image: 'images/p1.jpg',
+      link: 'https://www.instagram.com/p/DCCVQRBMe56/',
+      alt: 'Recent drukwerk project 2'
+    },
+    {
+      image: 'images/p2.jpg',
+      link: 'https://www.instagram.com/p/DBwWZlmMxIu/',
+      alt: 'Recent drukwerk project 3'
+    },
+    {
+      image: 'images/p3.jpg',
+      link: 'https://www.instagram.com/p/DBuEE18sPPD/',
+      alt: 'Recent drukwerk project 4'
+    },
+    {
+      image: 'images/p8.jpg',
+      link: 'https://www.instagram.com/p/DBjzEQTsH8L/',
+      alt: 'Recent drukwerk project 5'
+    },
+    {
+      image: 'images/p9.jpg',
+      link: 'https://www.instagram.com/p/DBVu2kfsWQu/',
+      alt: 'Recent drukwerk project 6'
+    }
   ];
 
-  async function fetchInstagramPost(postUrl) {
-    try {
-      // Use Instagram's oembed API to get post data
-      const oembedUrl = `https://graph.facebook.com/v18.0/instagram_oembed?url=${encodeURIComponent(postUrl)}&access_token=YOUR_ACCESS_TOKEN&fields=thumbnail_url,author_name,media_id`;
-
-      // Fallback: Extract post ID and create thumbnail
-      const postId = postUrl.match(/\/p\/([^\/]+)/)[1];
-      const thumbnailUrl = `https://www.instagram.com/p/${postId}/media/?size=m`;
-
-      return {
-        postUrl: postUrl,
-        thumbnailUrl: thumbnailUrl,
-        postId: postId
-      };
-    } catch (error) {
-      console.error('Error fetching Instagram post:', error);
-      return null;
-    }
-  }
-
-  async function createInstagramGrid() {
+  function createInstagramGrid() {
     const feedContainer = document.getElementById('instagram-feed');
 
     if (!feedContainer) {
       return;
     }
 
-    // Show loading state
-    feedContainer.innerHTML = '<div class="col-12 text-center"><p>Instagram feed wordt geladen...</p></div>';
-
-    const posts = await Promise.all(INSTAGRAM_POSTS.map(url => fetchInstagramPost(url)));
-
     let gridHTML = '';
 
-    posts.forEach((post, index) => {
-      if (post) {
-        gridHTML += `
-          <div class="col-lg-4 col-md-6 mb-4">
-            <a href="${post.postUrl}" target="_blank" class="instagram-grid-item" rel="noopener">
-              <div class="instagram-post-wrapper">
-                <img src="${post.thumbnailUrl}"
-                     alt="Instagram post ${index + 1}"
-                     class="instagram-post-image"
-                     loading="lazy"
-                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'instagram-error\\'>Foto kan niet worden geladen</div>';">
-                <div class="instagram-overlay">
-                  <i class="fa fa-instagram"></i>
-                  <p>Bekijk op Instagram</p>
-                </div>
+    INSTAGRAM_POSTS.forEach((post, index) => {
+      gridHTML += `
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="${post.link}" target="_blank" class="instagram-grid-item" rel="noopener">
+            <div class="instagram-post-wrapper">
+              <img src="${post.image}"
+                   alt="${post.alt}"
+                   class="instagram-post-image"
+                   loading="lazy">
+              <div class="instagram-overlay">
+                <i class="fa fa-instagram"></i>
+                <p>Bekijk op Instagram</p>
               </div>
-            </a>
-          </div>
-        `;
-      }
-    });
-
-    if (gridHTML === '') {
-      gridHTML = `
-        <div class="col-12 text-center">
-          <p>Kon Instagram posts niet laden. <a href="${INSTAGRAM_URL}" target="_blank">Bekijk onze Instagram</a></p>
+            </div>
+          </a>
         </div>
       `;
-    }
+    });
 
     feedContainer.innerHTML = gridHTML;
   }
