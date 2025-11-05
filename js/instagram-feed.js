@@ -1,47 +1,18 @@
 // Instagram Feed Loader for The Printing Shop Antwerpen
-// Displays 6 recent Instagram-style posts in a grid format
-// TO UPDATE: Add images to images/instagram/ folder and update INSTAGRAM_POSTS array below
+// Uses Instagram's official oEmbed to display posts
+// TO UPDATE: Update the INSTAGRAM_POSTS array below with new post URLs
 
 (function() {
   'use strict';
 
-  const INSTAGRAM_USERNAME = 'theprintingshopantwerpen';
-  const INSTAGRAM_URL = 'https://www.instagram.com/' + INSTAGRAM_USERNAME + '/';
-
-  // EASY UPDATE: Add your 6 most recent Instagram posts here
-  // image: path to image file (place images in images/instagram/ folder)
-  // link: Instagram post URL (so users can click through to see the full post)
+  // EASY UPDATE: Add your Instagram post URLs here
   const INSTAGRAM_POSTS = [
-    {
-      image: 'images/p18.jpg',
-      link: 'https://www.instagram.com/p/DDGr50tM9fN/',
-      alt: 'Recent drukwerk project 1'
-    },
-    {
-      image: 'images/p1.png',
-      link: 'https://www.instagram.com/p/DCCVQRBMe56/',
-      alt: 'Recent drukwerk project 2'
-    },
-    {
-      image: 'images/p2.png',
-      link: 'https://www.instagram.com/p/DBwWZlmMxIu/',
-      alt: 'Recent drukwerk project 3'
-    },
-    {
-      image: 'images/p3.png',
-      link: 'https://www.instagram.com/p/DBuEE18sPPD/',
-      alt: 'Recent drukwerk project 4'
-    },
-    {
-      image: 'images/p8.png',
-      link: 'https://www.instagram.com/p/DBjzEQTsH8L/',
-      alt: 'Recent drukwerk project 5'
-    },
-    {
-      image: 'images/p5.jpg',
-      link: 'https://www.instagram.com/p/DBVu2kfsWQu/',
-      alt: 'Recent drukwerk project 6'
-    }
+    'https://www.instagram.com/theprintingshopantwerpen/p/C7-NbpNoF-z/',
+    'https://www.instagram.com/theprintingshopantwerpen/p/C7EMzDqN2jy/',
+    'https://www.instagram.com/theprintingshopantwerpen/p/C5k1R5kNAu7/',
+    'https://www.instagram.com/theprintingshopantwerpen/p/C6wniYOt9ls/',
+    'https://www.instagram.com/theprintingshopantwerpen/p/C6rIaMENwOY/',
+    'https://www.instagram.com/theprintingshopantwerpen/p/C3tTM72sDUh/'
   ];
 
   function createInstagramGrid() {
@@ -53,26 +24,39 @@
 
     let gridHTML = '';
 
-    INSTAGRAM_POSTS.forEach((post, index) => {
+    // Create blockquote elements for each Instagram post
+    // Instagram's embed.js will transform these into embedded posts
+    INSTAGRAM_POSTS.forEach((postUrl, index) => {
       gridHTML += `
         <div class="col-lg-4 col-md-6 mb-4">
-          <a href="${post.link}" target="_blank" class="instagram-grid-item" rel="noopener">
-            <div class="instagram-post-wrapper">
-              <img src="${post.image}"
-                   alt="${post.alt}"
-                   class="instagram-post-image"
-                   loading="lazy">
-              <div class="instagram-overlay">
-                <i class="fa fa-instagram"></i>
-                <p>Bekijk op Instagram</p>
-              </div>
-            </div>
-          </a>
+          <blockquote class="instagram-media"
+                      data-instgrm-captioned
+                      data-instgrm-permalink="${postUrl}"
+                      data-instgrm-version="14"
+                      style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:100%; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+          </blockquote>
         </div>
       `;
     });
 
     feedContainer.innerHTML = gridHTML;
+
+    // Load Instagram's embed script to render the posts
+    loadInstagramEmbedScript();
+  }
+
+  function loadInstagramEmbedScript() {
+    // Check if script is already loaded
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+      return;
+    }
+
+    // Load Instagram embed script
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = '//www.instagram.com/embed.js';
+    document.body.appendChild(script);
   }
 
   // Initialize when DOM is ready
