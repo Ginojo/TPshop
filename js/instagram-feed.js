@@ -1,52 +1,59 @@
 // Instagram Feed Loader for The Printing Shop Antwerpen
-// Uses Behold.so free widget - no API key required
+// Simple grid with Instagram profile link - works immediately
 
 (function() {
   'use strict';
 
-  // Behold Widget Configuration
-  // To get your Behold feed ID:
-  // 1. Go to https://behold.so/
-  // 2. Connect your Instagram account (free)
-  // 3. Copy your feed ID and replace 'BEHOLD_FEED_ID' below
+  const INSTAGRAM_USERNAME = 'theprintingshopantwerpen';
+  const INSTAGRAM_URL = 'https://www.instagram.com/' + INSTAGRAM_USERNAME + '/';
 
-  const BEHOLD_FEED_ID = 'YOUR_BEHOLD_FEED_ID_HERE';
-
-  function loadBeholdWidget() {
+  function createInstagramGrid() {
     const feedContainer = document.getElementById('instagram-feed');
 
     if (!feedContainer) {
       return;
     }
 
-    // Check if Behold ID is configured
-    if (BEHOLD_FEED_ID === 'YOUR_BEHOLD_FEED_ID_HERE') {
-      // Show temporary placeholder with instructions
-      feedContainer.innerHTML = `
-        <div class="col-12 text-center p-5">
-          <h4>Instagram Feed komt binnenkort!</h4>
-          <p>Volg ons op <a href="https://www.instagram.com/theprintingshopantwerpen/" target="_blank" style="color: #eb252eff;">@theprintingshopantwerpen</a></p>
-          <p class="small text-muted">Configureer Behold.so in js/instagram-feed.js</p>
-        </div>
-      `;
-      return;
-    }
+    // Create a beautiful grid showcasing Instagram
+    // Each box links to the Instagram profile
+    const gridHTML = `
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="${INSTAGRAM_URL}" target="_blank" class="instagram-grid-item">
+          <div class="instagram-placeholder">
+            <i class="fa fa-instagram" style="font-size: 48px; color: #E4405F;"></i>
+            <h5 class="mt-3">Bekijk onze Instagram</h5>
+            <p>@${INSTAGRAM_USERNAME}</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="${INSTAGRAM_URL}" target="_blank" class="instagram-grid-item">
+          <div class="instagram-placeholder">
+            <i class="fa fa-image" style="font-size: 48px; color: #E4405F;"></i>
+            <h5 class="mt-3">Recente Projecten</h5>
+            <p>Flyers, Thesissen & meer</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="${INSTAGRAM_URL}" target="_blank" class="instagram-grid-item">
+          <div class="instagram-placeholder">
+            <i class="fa fa-camera" style="font-size: 48px; color: #E4405F;"></i>
+            <h5 class="mt-3">Volg Ons</h5>
+            <p>Voor dagelijkse updates</p>
+          </div>
+        </a>
+      </div>
+    `;
 
-    // Load Behold widget
-    feedContainer.innerHTML = '<figure data-behold-id="' + BEHOLD_FEED_ID + '"></figure>';
-
-    // Load Behold script
-    const script = document.createElement('script');
-    script.src = 'https://w.behold.so/widget.js';
-    script.type = 'module';
-    document.body.appendChild(script);
+    feedContainer.innerHTML = gridHTML;
   }
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadBeholdWidget);
+    document.addEventListener('DOMContentLoaded', createInstagramGrid);
   } else {
-    loadBeholdWidget();
+    createInstagramGrid();
   }
 })();
 
