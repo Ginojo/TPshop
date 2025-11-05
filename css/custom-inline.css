@@ -794,6 +794,11 @@ color: #fff;
   line-height: 1.4;
   margin-bottom: 0.25rem;
   margin-top: 0;
+  white-space: normal;
+}
+
+.top-info-block .info-block-hours h5 {
+  white-space: nowrap;
 }
 
 .top-info-block .info-block p {
@@ -806,4 +811,9 @@ color: #fff;
 .hours-label {
   color: #eb252eff;
   font-weight: 700;
+}
+
+/* Prevent opening hours from breaking across lines */
+.contact-info-block2 p {
+  white-space: nowrap;
 }
