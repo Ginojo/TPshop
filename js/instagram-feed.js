@@ -18,27 +18,27 @@
       alt: 'Recent drukwerk project 1'
     },
     {
-      image: 'images/p1.jpg',
+      image: 'images/p1.png',
       link: 'https://www.instagram.com/p/DCCVQRBMe56/',
       alt: 'Recent drukwerk project 2'
     },
     {
-      image: 'images/p2.jpg',
+      image: 'images/p2.png',
       link: 'https://www.instagram.com/p/DBwWZlmMxIu/',
       alt: 'Recent drukwerk project 3'
     },
     {
-      image: 'images/p3.jpg',
+      image: 'images/p3.png',
       link: 'https://www.instagram.com/p/DBuEE18sPPD/',
       alt: 'Recent drukwerk project 4'
     },
     {
-      image: 'images/p8.jpg',
+      image: 'images/p8.png',
       link: 'https://www.instagram.com/p/DBjzEQTsH8L/',
       alt: 'Recent drukwerk project 5'
     },
     {
-      image: 'images/p9.jpg',
+      image: 'images/p5.jpg',
       link: 'https://www.instagram.com/p/DBVu2kfsWQu/',
       alt: 'Recent drukwerk project 6'
     }
