@@ -761,6 +761,19 @@ color: #fff;
   transition: height 0.1s ease !important;
 }
 
+/* Instructies link hover effect */
+.instructies-link {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.instructies-link:hover {
+  color: #007bff !important;
+  text-decoration: underline;
+}
+
 /* Optimized contact section styling */
 #contacttop .row {
   align-items: flex-start;
