@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct Web3Forms Test</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Direct Web3Forms Test</h1>
+    <p>This form sends directly to Web3Forms without any JavaScript - just to test if the access key works.</p>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Your access key -->
+        <input type="hidden" name="access_key" value="d2e9fe83-f0f0-43de-b806-3f427e5fabb9">
+
+        <!-- Optional: Redirect to your own thank you page -->
+        <input type="hidden" name="redirect" value="false">
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message" required></textarea><br><br>
+
+        <button type="submit">Submit Form</button>
+    </form>
+
+    <hr>
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Fill in the form above</li>
+        <li>Click Submit</li>
+        <li>If successful, you'll see a JSON response</li>
+        <li>Check your email at ginoludik@gmail.com</li>
+    </ol>
+
+    <p><strong>Note:</strong> When you created your access key at Web3Forms, you provided the email address where forms should be sent. That email should be ginoludik@gmail.com</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form - Web3Forms</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Test Contact Form</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="contact_form">
+                    <div class="contact__msg alert" role="alert" style="display: none;"></div>
+
+                    <div class="form-group">
+                        <label>Naam:</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Onderwerp:</label>
+                        <input type="text" name="subject" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bericht:</label>
+                        <textarea name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" value="Bericht Verzenden">
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Debug Info:</h3>
+                <div id="debug"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery MUST be loaded first -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Then our Web3Forms script -->
+    <script src="js/web3forms-fixed.js"></script>
+
+    <script>
+        // Debug script
+        $(document).ready(function() {
+            $('#debug').html('<p>✅ jQuery loaded</p>');
+
+            if (typeof WEB3FORMS_ACCESS_KEY !== 'undefined') {
+                $('#debug').append('<p>✅ Access key found: ' + WEB3FORMS_ACCESS_KEY.substring(0, 10) + '...</p>');
+            } else {
+                $('#debug').append('<p>❌ Access key not found</p>');
+            }
+
+            var formCount = $('.contact_form').length;
+            $('#debug').append('<p>Forms found: ' + formCount + '</p>');
+
+            // Check if form submission is intercepted
+            $('.contact_form').on('submit', function(e) {
+                $('#debug').append('<p>✅ Form submission intercepted</p>');
+            });
+        });
+    </script>
+</body>
+</html>
